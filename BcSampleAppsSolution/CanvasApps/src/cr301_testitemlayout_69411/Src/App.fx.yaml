@@ -1,6 +1,0 @@
-App As appinfo:
-    BackEnabled: =false
-    OnStart: |-
-        =Set(gblImagePlaceholder, "https://msft1scuas7237-u1mo49o.appservices.us.businesscentral.dynamics.com/tenant/msft1a6720t72763849/tab/43bf615d-1f31-46ff-ab89-5003ce372cbb/Resources/Images/EntityPlaceholder_240x240.png?_v=21.0.51393.51896")
-    StartScreen: =
-
