@@ -9,7 +9,7 @@ on:
       environment:
         description: Environment
         required: true
-        default: "QA"
+        default: "UX"
       solutionName:
         description: Name of the Power Platform solution
         required: true
