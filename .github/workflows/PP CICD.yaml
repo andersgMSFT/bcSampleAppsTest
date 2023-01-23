@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
 env:
-  version: 1.0.${{github.run_number}}
+  version: 99.9.${{github.run_number}}
   solutionName: "BcSampleAppsSolution"
   postFix: 0
 
@@ -18,7 +18,7 @@ jobs:
       - name: Update solution settings
         shell: pwsh
         run: |
-          .github/actions/script/updateSolutionFile.ps1 -solutionPath PowerPlatform/${{env.solutionName}}/Other/Solution.xml -version ${{env.version}} -postFix ${{env.postFix}}
+          .github/actions/script/updateSolutionFile.ps1 -version ${{env.version}} -postFix ${{env.postFix}}
 
       - name: Update BC connection
         shell: pwsh
