@@ -68,4 +68,5 @@ jobs:
 
       - name: Commit changes (if there are any)
         shell: pwsh
+        permissions: read-all|write-all
         run: .github/actions/script/commitGitChanges.ps1 -solutionName ${{github.event.inputs.solutionName}} -environmentName ${{github.event.inputs.environment}}
