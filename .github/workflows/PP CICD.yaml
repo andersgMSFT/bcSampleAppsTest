@@ -29,7 +29,7 @@ jobs:
         uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
           solution-file: forgetMe.zip
-          solution-folder: PowerPlatform/${{env.solutionName}}
+          solution-folder: ${{env.solutionName}}
           solution-type: ${{env.solutionType}}
           process-canvas-apps: true
 
@@ -37,7 +37,7 @@ jobs:
         uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
           solution-file: "output/${{env.solutionName}}.zip"
-          solution-folder: "PowerPlatform/${{env.solutionName}}"
+          solution-folder: "${{env.solutionName}}"
           solution-type: "Unmanaged"
           process-canvas-apps: true
 
