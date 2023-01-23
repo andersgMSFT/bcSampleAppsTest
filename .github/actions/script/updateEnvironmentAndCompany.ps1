@@ -4,23 +4,26 @@ param(
     [Parameter(Position = 1, mandatory = $true)] [string] $environmentName
 )
 
-
 function getCurrentSettings {
-    # The Business Central connector id
-    $connectorId = "db53e06c-0d5d-4540-a126-3218ac51e136";
-
     $connectionFiles = Get-ChildItem -Recurse -File -Include "Connections.json";    
     foreach ($connectionFile in $connectionFiles) {
-
         $connectionsFilePath = $connectionFile.FullName;
         $connectionsfile = (Get-ChildItem $connectionsFilePath);
         
         if ($connectionsfile.Exists) {
             try {
                 $jsonFile = Get-Content $connectionsfile.FullName | ConvertFrom-Json;
-                $currentEnvironmentAndCompany = ($jsonFile.$connectorId.datasets | Get-Member -MemberType NoteProperty).Name;
-                #NOTE: We assume all have the same BC connection, so we just return the first one.
-                return $currentEnvironmentAndCompany; 
+                $ConnectorNodeNames = ($jsonFile | Get-Member -MemberType NoteProperty).Name;
+
+                # We don't know the name of the connector node, so we need to loop through all of them
+                foreach($connectorNodeName in $ConnectorNodeNames){
+                    $connectorNode = $jsonFile.$connectorNodeName;
+                    if($connectorNode.connectionRef.displayName -eq "Dynamics 365 Business Central"){
+                        $currentEnvironmentAndCompany = ($connectorNode.datasets | Get-Member -MemberType NoteProperty).Name;
+                        return $currentEnvironmentAndCompany;     
+                    }
+                }
+
             }
             catch {
                 Write-Error "Could not find connector node in file: " + $connectorId;
