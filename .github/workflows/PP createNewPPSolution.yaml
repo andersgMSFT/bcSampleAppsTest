@@ -1,0 +1,47 @@
+name: PP Create new PowerPlatform solution
+on:
+  workflow_dispatch:
+    inputs:
+      solutionName:
+        description: Name of the new Power Platform solution
+        required: true
+        default: testName
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: ${{github.event.inputs.environment}}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Download files
+        uses: robinraju/release-downloader@v1.7
+        with:
+          repository: "andersgMSFT/bcSampleAppsTest"
+          latest: true
+          fileName: "BcSampleAppsSolution_0.0.0.1.zip"
+            
+      - name: Check files
+        run: ls;
+
+      - name: unpack-solution action
+        uses: microsoft/powerplatform-actions/unpack-solution@v0
+        with:
+          solution-file: BcSampleAppsSolution_0.0.0.1.zip
+          solution-folder: ${{github.event.inputs.solutionName}}
+          solution-type: "Unmanaged"
+          overwrite-files: true
+          process-canvas-apps: true
+
+      - name: Remove zip file
+        run: rm BcSampleAppsSolution_0.0.0.1.zip
+
+      - name: Remove possible postfix from solution file
+        shell: pwsh
+        run: |
+          .github/actions/script/updateSolutionFile.ps1 -solutionPath ${{github.event.inputs.solutionName}}/Other/Solution.xml
+          
+      - name: Commit changes (if there are any)
+        shell: pwsh
+        run: .github/actions/script/commitGitChanges.ps1 -solutionName ${{github.event.inputs.solutionName}} -environmentName BcSampleApps

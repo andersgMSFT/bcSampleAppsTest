@@ -1,0 +1,254 @@
+name: ' Publish To Environment'
+
+on:
+  workflow_dispatch:
+    inputs:
+      appVersion:
+        description: App version to deploy to environment(s) (current, prerelease, draft, latest or version number)
+        required: false
+        default: 'latest'
+      environmentName:
+        description: Environment mask to receive the new version (* for all, PROD* for all environments starting with PROD)
+        required: true
+        default: CDX
+
+permissions:
+  contents: read
+  actions: read
+
+defaults:
+  run:
+    shell: powershell
+
+jobs:
+  Initialization:
+    runs-on: [ windows-latest ]
+    outputs:
+      telemetryScopeJson: ${{ steps.init.outputs.telemetryScopeJson }}
+      settings: ${{ steps.ReadSettings.outputs.SettingsJson }}
+      environments: ${{ steps.ReadSettings.outputs.EnvironmentsJson }}
+      environmentCount: ${{ steps.ReadSettings.outputs.EnvironmentCount }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Initialize the workflow
+        id: init
+        uses: BusinessCentralDemos/AL-Go-Actions/WorkflowInitialize@main
+        with:
+          shell: powershell
+          eventId: "DO0097"
+
+      - name: Read settings
+        id: ReadSettings
+        uses: BusinessCentralDemos/AL-Go-Actions/ReadSettings@main
+        with:
+          shell: powershell
+          parentTelemetryScopeJson: ${{ steps.init.outputs.telemetryScopeJson }}
+          getEnvironments: ${{ github.event.inputs.environmentName }}
+          includeProduction: 'Y'
+
+  Deploy:
+    needs: [ Initialization ]
+    if: ${{ needs.Initialization.outputs.environmentCount > 0 }}
+    strategy: ${{ fromJson(needs.Initialization.outputs.environments) }}
+    runs-on: ${{ fromJson(matrix.os) }}
+    name: Deploy to ${{ matrix.environment }}
+    environment:
+      name: ${{ matrix.environment }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: EnvName
+        id: envName
+        run: |
+          $ErrorActionPreference = "STOP"
+          Set-StrictMode -version 2.0
+          $envName = '${{ matrix.environment }}'.split(' ')[0]
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "envName=$envName"
+
+      - name: Read settings
+        uses: BusinessCentralDemos/AL-Go-Actions/ReadSettings@main
+        with:
+          shell: powershell
+
+      - name: Read secrets
+        uses: BusinessCentralDemos/AL-Go-Actions/ReadSecrets@main
+        env:
+          secrets: ${{ toJson(secrets) }}
+        with:
+          shell: powershell
+          settingsJson: ${{ env.Settings }}
+          secrets: '${{ steps.envName.outputs.envName }}-AuthContext,${{ steps.envName.outputs.envName }}_AuthContext,AuthContext,${{ steps.envName.outputs.envName }}-EnvironmentName,${{ steps.envName.outputs.envName }}_EnvironmentName,EnvironmentName,projects'
+
+      - name: AuthContext
+        id: authContext
+        run: |
+          $ErrorActionPreference = "STOP"
+          Set-StrictMode -version 2.0
+          $envName = '${{ steps.envName.outputs.envName }}'
+          $deployToSettingStr = [System.Environment]::GetEnvironmentVariable("DeployTo$envName")
+          if ($deployToSettingStr) {
+            $deployToSetting = $deployToSettingStr | ConvertFrom-Json
+          }
+          else {
+            $deployToSetting = [PSCustomObject]@{}
+          }
+          $authContext = $null
+          "$($envName)-AuthContext", "$($envName)_AuthContext", "AuthContext" | ForEach-Object {
+            if (!($authContext)) {
+              $authContext = [System.Environment]::GetEnvironmentVariable($_)
+              if ($authContext) {
+                Write-Host "Using $_ secret as AuthContext"
+              }
+            }            
+          }
+          if (!($authContext)) {
+            Write-Host "::Error::No AuthContext provided"
+            exit 1
+          }
+          if ($deployToSetting.PSObject.Properties.name -eq "EnvironmentName") {
+            $environmentName = $deployToSetting.EnvironmentName
+          }
+          else {
+            $environmentName = $null
+            "$($envName)-EnvironmentName", "$($envName)_EnvironmentName", "EnvironmentName" | ForEach-Object {
+              if (!($EnvironmentName)) {
+                $EnvironmentName = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String([System.Environment]::GetEnvironmentVariable($_)))
+                if ($EnvironmentName) {
+                  Write-Host "Using $_ secret as EnvironmentName"
+                  Write-Host "Please consider using the DeployTo$_ setting instead, where you can specify EnvironmentName, projects and branches"
+                }
+              }            
+            }
+          }
+          if (!($environmentName)) {
+            $environmentName = '${{ steps.envName.outputs.envName }}'
+          }
+          $environmentName = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes(($environmentName + '${{ matrix.environment }}'.SubString($envName.Length)).ToUpperInvariant()))
+
+          if ($deployToSetting.PSObject.Properties.name -eq "projects") {
+            $projects = $deployToSetting.projects
+          }
+          else {
+            $projects = [System.Environment]::GetEnvironmentVariable("$($envName)-projects")
+            if (-not $projects) {
+              $projects = [System.Environment]::GetEnvironmentVariable("$($envName)_Projects")
+              if (-not $projects) {
+                $projects = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String([System.Environment]::GetEnvironmentVariable('projects')))
+              }
+            }
+          }
+          if ($projects -eq '' -or $projects -eq '*') {
+            $projects = '*'
+          }
+          else {
+            $buildProjects = '${{ needs.Initialization.outputs.projects }}' | ConvertFrom-Json
+            $projects = ($projects.Split(',') | Where-Object { $buildProjects -contains $_ }) -join ','
+          }
+
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "authContext=$authContext"
+          Write-Host "authContext=$authContext"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "environmentName=$environmentName"
+          Write-Host "environmentName=$([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($environmentName)))"
+          Write-Host "environmentName (as Base64)=$environmentName"
+          Add-Content -Path $env:GITHUB_OUTPUT -Value "projects=$projects"
+          Write-Host "projects=$projects"
+
+      - name: Deploy
+        uses: BusinessCentralDemos/AL-Go-Actions/Deploy@main
+        env:
+          AuthContext: ${{ steps.authContext.outputs.authContext }}
+        with:
+          shell: powershell
+          parentTelemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}
+          type: 'Publish'
+          projects: ${{ steps.authContext.outputs.projects }}
+          environmentName: ${{ steps.authContext.outputs.environmentName }}
+          artifacts: ${{ github.event.inputs.appVersion }}
+
+  Deploy-PowerPlatform:
+    needs: [ Initialization ]
+    runs-on: ubuntu-latest
+    environment: ${{github.event.inputs.environmentName}}
+    env:
+      solutionName: BcSampleAppsSolution
+      version: 2.0.0
+      solutionType: Unmanaged
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Set Postfix envvariable
+        if: github.event.inputs.postFix == 'true'
+        run: echo "postFixText=${{github.actor}}" >> $GITHUB_ENV
+
+      - name: Set solution envVariable
+        if: github.event.inputs.managed == 'true'
+        run: echo "solutionType=Managed" >> $GITHUB_ENV
+
+      - name: Update solution settings
+        shell: pwsh
+        run: |
+          .github/actions/script/updateSolutionFile.ps1 -solutionPath PowerPlatform/${{env.solutionName}}/Other/Solution.xml -version ${{env.version}}.${{github.run_number}}
+      
+      - name: Update BC connection
+        shell: pwsh
+        run: |
+          .github/actions/script/updateEnvironmentAndCompany.ps1 -companyId ${{secrets.bcCompanyId}} -environmentName ${{secrets.bcEnvironmentName}}
+      
+      - name: Test Pack solution(Not real - just workaround bug)
+        uses: microsoft/powerplatform-actions/pack-solution@v0
+        with:
+          solution-file: forgetMe.zip
+          solution-folder: PowerPlatform/${{env.solutionName}}
+          solution-type: ${{env.solutionType}}
+          process-canvas-apps: true
+
+      - name: Pack solution
+        uses: microsoft/powerplatform-actions/pack-solution@v0
+        with:
+          solution-file: output/${{env.solutionName}}.zip
+          solution-folder: PowerPlatform/${{env.solutionName}}
+          solution-type: ${{env.solutionType}}
+          process-canvas-apps: true
+
+      - name: Who am I
+        uses: microsoft/powerplatform-actions/who-am-i@v0
+        with:
+          user-name: ${{secrets.PowerUser}}
+          password-secret: ${{secrets.PowerPassword}}
+          environment-url: ${{secrets.PowerEnv}}
+
+      - name: Publish solution to Power Platform
+        uses: microsoft/powerplatform-actions/import-solution@v0
+        with:
+          user-name: ${{secrets.PowerUser}}
+          password-secret: ${{secrets.PowerPassword}}
+          environment-url: ${{secrets.PowerEnv}}
+          solution-file: output/${{env.solutionName}}.zip
+          force-overwrite: true
+          publish-changes: true
+
+      - name: Publish solution artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{env.solutionName}}
+          path: output/${{env.solutionName}}.zip
+
+  PostProcess:
+    if: always()
+    runs-on: [ windows-latest ]
+    needs: [ Initialization, Deploy, Deploy-PowerPlatform ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Finalize the workflow
+        id: PostProcess
+        uses: BusinessCentralDemos/AL-Go-Actions/WorkflowPostProcess@main
+        with:
+          shell: powershell
+          eventId: "DO0097"
+          telemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}

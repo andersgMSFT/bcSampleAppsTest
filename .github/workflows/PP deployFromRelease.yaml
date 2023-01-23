@@ -1,0 +1,27 @@
+name: PP Deploy solution release
+
+
+env:
+  solutionType: "Unmanaged"
+  postFixText: "0"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: ${{github.event.inputs.environment}}
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Set Postfix envvariable
+        if: github.event.inputs.postFix == 'true'
+        run: echo "postFixText=${{github.actor}}" >> $GITHUB_ENV
+
+      - name: Set solution envVariable
+        if: github.event.inputs.managed == 'true'
+        run: echo "solutionType=Managed" >> $GITHUB_ENV
+
+      - name: Get all Git releases
+        shell: pwsh
+        run: |
+          .github\actions\script\getAllGitReleases.ps1 -token ${{ secrets.GITHUB_TOKEN }}

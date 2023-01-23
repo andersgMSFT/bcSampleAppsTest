@@ -1,0 +1,24 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas",
+    "CdpRevision": {
+      "BaseUrl": "/v3",
+      "LastChangedTimeString": "2023-01-04T18:18:52.8830000Z",
+      "RevisionNumber": 3
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "description": "description",
+      "id": "id",
+      "Inventory": "Inventory",
+      "itemImageText": "itemImageText",
+      "picture": "picture",
+      "unitPrice": "unitPrice"
+    },
+    "DatasetName": "SANDBOX,a2db7307-078b-ed11-aad8-000d3a21edc2",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "itemsWithImage (microsoft/andersg/beta)",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

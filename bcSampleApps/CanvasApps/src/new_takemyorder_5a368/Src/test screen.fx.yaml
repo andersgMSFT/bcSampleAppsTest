@@ -1,0 +1,25 @@
+"'test screen' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Button3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |
+            =Set(tempSelectedItem, First(colSelectedItems));
+            Set(tempImageBlank, IsBlank(tempSelectedItem.image));
+            Set(tempFullItem, LookUp('itemsWithImage (microsoft/andersg/beta)', id = tempSelectedItem.id));
+            Set(tempImageTextBlank, IsBlank(tempFullItem.itemImageText));
+            Set(tempImageTextBlank2, tempFullItem.itemImageText = GUID("00000000-0000-0000-0000-000000000000"));
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =171
+        Y: =942
+        ZIndex: =1
+
