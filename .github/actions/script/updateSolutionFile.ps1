@@ -59,8 +59,11 @@ function Update-ManagedNode {
         [Parameter(Position = 1, mandatory = $true)]
         [xml] $xml
     )
-
-    $managedValue = if ($managed) { "1" } else { "0" };
+    
+    $managedValue = "0";
+    if ($managed -eq "true") {
+        $managedValue = "1";
+    }
 
     $nodeWithName = $xml.SelectSingleNode("//Managed");
     Write-Host "Updating managed flag: "$managedValue;
