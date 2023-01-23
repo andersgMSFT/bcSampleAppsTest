@@ -32,7 +32,7 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "production,a2db7307-078b-ed11-aad8-000d3a21edc2": {
+      "SANDBOX,a2db7307-078b-ed11-aad8-000d3a21edc2": {
         "dataSources": {
           "items (v2.0)": {
             "tableName": "items,v2.0"
