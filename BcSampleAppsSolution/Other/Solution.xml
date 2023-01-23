@@ -132,18 +132,8 @@
       </Addresses>
     </Publisher>
     <RootComponents>
-      <RootComponent type="29" id="{37173246-0097-ed11-aad1-000d3a991110}" behavior="0" />
-      <RootComponent type="29" id="{38173246-0097-ed11-aad1-000d3a991110}" behavior="0" />
-      <RootComponent type="29" id="{e18931fd-4393-ed11-aad1-000d3a991110}" behavior="0" />
-      <RootComponent type="300" schemaName="cr301_testitemlayout_69411" behavior="0" />
       <RootComponent type="300" schemaName="new_bcwarehousehelper_290e3" behavior="0" />
       <RootComponent type="300" schemaName="new_takemyorder_5a368" behavior="0" />
     </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required type="1" schemaName="cr301_itemdescription" displayName="itemDescription" solution="Active" />
-        <Dependent type="300" schemaName="cr301_testitemlayout_69411" displayName="ChatGPTTest" />
-      </MissingDependency>
-    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>
