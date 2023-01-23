@@ -1,0 +1,152 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_dynamicssmbsaas": {
+        "runtimeSource": "invoker",
+        "connection": {},
+        "api": {
+          "name": "shared_dynamicssmbsaas"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "61d161a6-6154-4b73-826a-eeee60a475ff"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "fileInput",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_1": {
+                  "title": "itemId",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text",
+                "text_1"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Update_an_image,_file_or_document_(V3)": {
+          "runAfter": {
+            "Initialize_Image_String": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "4ed3e75a-0eac-4bf6-883e-f4595d40a720"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas",
+              "connectionName": "shared_dynamicssmbsaas",
+              "operationId": "PatchBlobFromNavigationV3"
+            },
+            "parameters": {
+              "bcenvironment": "PRODUCTION",
+              "company": "a2db7307-078b-ed11-aad8-000d3a21edc2",
+              "dataset": "v2.0",
+              "blobnavigationpath": "items/picture/pictureContent",
+              "pathParameters/items": "@triggerBody()['text_1']",
+              "pathParameters/$content": "@base64ToBinary(variables('bcImageString'))"
+            },
+            "authentication": {
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']",
+              "type": "Raw"
+            }
+          }
+        },
+        "Find_image_content_end": {
+          "runAfter": {
+            "Find_Image_content_start": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "d9f1f1e0-3904-4b6e-b77d-ca5d1c8302c5"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "BcFileLength",
+                "type": "integer",
+                "value": "@sub(length(triggerBody()['text']), add(variables('BcImageStart'),1))"
+              }
+            ]
+          }
+        },
+        "Initialize_Image_String": {
+          "runAfter": {
+            "Find_image_content_end": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "6511dd88-3f30-459c-b1eb-429a344e7081"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "bcImageString",
+                "type": "string",
+                "value": "@{substring(triggerBody()['text'], variables('BcImageStart'), variables('BcFileLength'))}"
+              }
+            ]
+          }
+        },
+        "Find_Image_content_start": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "43331171-1c46-41a6-8b7a-a01cea67de88"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "BcImageStart",
+                "type": "integer",
+                "value": "@add(indexOf(triggerBody()['text'], ','), 1)"
+              }
+            ]
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

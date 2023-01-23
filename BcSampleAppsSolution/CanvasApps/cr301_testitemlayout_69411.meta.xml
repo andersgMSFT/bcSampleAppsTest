@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>cr301_testitemlayout_69411</Name>
+  <AppVersion>2023-01-18T13:20:30Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.22122.15.0</CreatedByClientVersion>
+  <MinClientVersion>3.22122.15.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","publisherVersion":"3.22122.15","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20230116T210716Z-3.22122.15.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>rgba(107, 69, 3, 1)</BackgroundColor>
+  <DisplayName>ChatGPTTest</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"516351e2-ed6f-4a94-8186-024721d8df96":{"id":"/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas","displayName":"Dynamics 365 Business Central","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/dynamicssmbsaas/icon.png","dataSources":["items (v2.0)"],"dependencies":[],"dependents":["0c0e1e42-0cb5-407e-9e09-d56662ad527c","613fb39a-47f7-4409-afc7-002317bc1fae"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"PRODUCTION,a2db7307-078b-ed11-aad8-000d3a21edc2":{"dataSources":{"items (v2.0)":{"tableName":"items,v2.0"}}}},"apiTier":"Premium","actions":["providers/PowerPlatform.Governance/Operations/Read"]},"3b3596bb-3df2-4b7a-a33e-66faf52e99df":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png","dataSources":["SendRequestToOpenAI"],"dependencies":[],"dependents":[],"parameterHints":{"workflowName":{"value":"f1fa32d5-db0e-4df7-af18-0dd36266ce59"},"workflowEntityId":{"value":"e18931fd-4393-ed11-aad1-000d3a991110"}},"parameterHintsV2":{"workflowName":{"value":"f1fa32d5-db0e-4df7-af18-0dd36266ce59"},"workflowEntityId":{"value":"e18931fd-4393-ed11-aad1-000d3a991110"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"0c0e1e42-0cb5-407e-9e09-d56662ad527c":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png","dataSources":["updateItemImage"],"dependencies":["516351e2-ed6f-4a94-8186-024721d8df96"],"dependents":[],"parameterHints":{"workflowName":{"value":"151bc2d6-28fa-421f-ad40-2a9a486fbbd3"},"workflowEntityId":{"value":"37173246-0097-ed11-aad1-000d3a991110"},"516351e2-ed6f-4a94-8186-024721d8df96":{"value":"shared_dynamicssmbsaas"}},"parameterHintsV2":{"workflowName":{"value":"151bc2d6-28fa-421f-ad40-2a9a486fbbd3"},"workflowEntityId":{"value":"37173246-0097-ed11-aad1-000d3a991110"},"shared_dynamicssmbsaas":{"value":"516351e2-ed6f-4a94-8186-024721d8df96"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"613fb39a-47f7-4409-afc7-002317bc1fae":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png","dataSources":["GetItemImage"],"dependencies":["516351e2-ed6f-4a94-8186-024721d8df96"],"dependents":[],"parameterHints":{"workflowName":{"value":"a887da7f-0266-49e0-b70c-3e715b79b1dc"},"workflowEntityId":{"value":"38173246-0097-ed11-aad1-000d3a991110"},"516351e2-ed6f-4a94-8186-024721d8df96":{"value":"shared_dynamicssmbsaas"}},"parameterHintsV2":{"workflowName":{"value":"a887da7f-0266-49e0-b70c-3e715b79b1dc"},"workflowEntityId":{"value":"38173246-0097-ed11-aad1-000d3a991110"},"shared_dynamicssmbsaas":{"value":"516351e2-ed6f-4a94-8186-024721d8df96"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified"}},"dataSources":{"itemDescriptions":{"entitySetName":"cr301_itemdescriptions","logicalName":"cr301_itemdescription"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"cr301_itemdescription","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/cr301_testitemlayout_69411_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/cr301_testitemlayout_69411_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

@@ -32,7 +32,7 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "PRODUCTION,84b7b4b7-135b-ed11-956e-000d3a398f21": {
+      "production,a2db7307-078b-ed11-aad8-000d3a21edc2": {
         "dataSources": {
           "items (v2.0)": {
             "tableName": "items,v2.0"
