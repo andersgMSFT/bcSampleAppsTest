@@ -8,8 +8,8 @@ param(
 
 if (git status --porcelain) {
   Write-Host "Commiting changes to branch";
-  git config user.email "git@workflow.com"; 
-  git config user.name "Pull changes workflow"; 
+  git config user.email "andersg@microsoft.com"; 
+  git config user.name "AndersMSFT"; 
   git add $solutionName; 
 
   $commitMessage = "pull latest solution changes from environment: " + $environmentName; 
