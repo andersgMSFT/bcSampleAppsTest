@@ -1,0 +1,206 @@
+"'Item list screen' As screen":
+    Fill: =RGBA(216, 226, 232, 1)
+    LoadingSpinnerColor: =RGBA(68, 57, 38, 1)
+    OnVisible: |-
+        =Set(gblImagePlaceholder,"https://msft1scuas7237-u1mo49o.appservices.us.businesscentral.dynamics.com/tenant/msft1a6720t72763849/tab/43bf615d-1f31-46ff-ab89-5003ce372cbb/Resources/Images/EntityPlaceholder_240x240.png?_v=21.0.51393.51896");
+
+    btnAddNewItem As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(68, 57, 38, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(68, 57, 38, 1), -20%)
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =24
+        Text: ="Add new"
+        Width: =280
+        X: =179
+        Y: =1048
+        ZIndex: =1
+
+    "galItems As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(119, 77, 3, 1)
+        Default: =varSelectedItem
+        Height: =495
+        Items: ='items (v2.0)'
+        OnSelect: =
+        TemplatePadding: =0
+        TemplateSize: =403
+        Y: =525
+        ZIndex: =2
+
+        Button1 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(239, 243, 246, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =440
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(68, 57, 38, 1), -20%)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =24
+            Text: =""
+            Width: =350
+            X: =40
+            Y: =20
+            ZIndex: =1
+
+        Title1 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =26
+            Text: =ThisItem.number
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 64
+            X: =40
+            Y: =91
+            ZIndex: =2
+
+        Subtitle1 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =42
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =22
+            Text: =ThisItem.displayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =40
+            Y: =171
+            ZIndex: =3
+
+        Subtitle1_1 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =42
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =22
+            Text: =ThisItem.itemCategoryCode
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =40
+            Y: =235
+            ZIndex: =5
+
+        Subtitle1_2 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =42
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =22
+            Text: = "$" & ThisItem.unitPrice
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =40
+            Y: =309
+            ZIndex: =6
+
+        Button1_1 As button:
+            BorderColor: =RGBA(68, 57, 38, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            FontWeight: =FontWeight.Semibold
+            Height: =440
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =Transparent
+            OnSelect: |-
+                =Navigate('Item Screen', ScreenTransition.Cover, {ctxSelectedItem: ThisItem});
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =24
+            Text: =""
+            Width: =350
+            X: =40
+            Y: =20
+            ZIndex: =7
+
+    cbxSearchItems As combobox:
+        BorderColor: =RGBA(119, 77, 3, 1)
+        ChevronBackground: =RGBA(68, 57, 38, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(68, 57, 38, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["displayName","number"]
+        Height: =70
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 224, 151, 1)
+        Items: ='items (v2.0)'
+        OnChange: |-
+            =Reset(galItems);
+            Set(varSelectedItem, cbxSearchItems.Selected);
+            Select(galItems);
+        OnSelect: =
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(119, 77, 3, 1)
+        SearchFields: =["displayName"]
+        SearchItems: =Search('items (v2.0)',cbxSearchItems.SearchText,"displayName")
+        SelectionFill: =RGBA(68, 57, 38, 1)
+        SelectMultiple: =false
+        Size: =21
+        Template: =ListItemTemplate.Double
+        Width: =501
+        X: =69
+        Y: =238
+        ZIndex: =3
+
+    lblHeaderItemsScreen As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(119, 77, 3, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Height: =104
+        Size: =40
+        Text: ="Items"
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =4
+

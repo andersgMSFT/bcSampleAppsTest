@@ -262,7 +262,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.50270040000000005,
+    "AnalysisLoadTime": 0.5027004,
     "ControlCount": {
       "button": 5,
       "gallery": 4,
@@ -275,7 +275,7 @@
       "screen": 4,
       "text": 2
     },
-    "DeserializationLoadTime": 1.3638950000000001,
+    "DeserializationLoadTime": 1.363895,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
