@@ -9,12 +9,12 @@ on:
       environment:
         type: text
         description: The environment to deploy to
-        default: CDX
+        default: Dev
         required: true
       version:
         description: Tag of this release (needs to be semantic version string https://semver.org, ex. 1.0)
         required: true
-        default: "1.4"
+        default: "1.0.0"
         type: text
       managed:
         description: Deploy as managed solution

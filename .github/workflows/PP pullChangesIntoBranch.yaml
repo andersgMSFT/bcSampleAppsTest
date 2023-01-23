@@ -6,7 +6,7 @@ on:
       environment:
         type: text
         description: The environment to get latest changes from
-        default: QA
+        default: Dev
       solutionName:
         type: text
         description: The name of the solution
