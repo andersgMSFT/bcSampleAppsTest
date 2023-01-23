@@ -6,7 +6,7 @@
       <LocalizedName description="BcSampleAppsSolution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.1</Version>
+    <Version>99.9.16</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>DefaultPublisherorgeb5c50b3</UniqueName>
@@ -135,5 +135,6 @@
       <RootComponent type="300" schemaName="new_bcwarehousehelper_290e3" behavior="0" />
       <RootComponent type="300" schemaName="new_takemyorder_5a368" behavior="0" />
     </RootComponents>
+    <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>
