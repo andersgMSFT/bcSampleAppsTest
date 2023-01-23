@@ -46,7 +46,7 @@ jobs:
         with:
           user-name: ${{secrets.PowerUser}}
           password-secret: ${{secrets.PowerPassword}}
-          environment-url: https://orgbcdd3464.crm.dynamics.com/
+          environment-url: ${{secrets.PowerEnv}}
 
       - name: Publish solution to Power Platform
         uses: microsoft/powerplatform-actions/import-solution@v0
