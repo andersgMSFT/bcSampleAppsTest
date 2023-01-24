@@ -99,3 +99,14 @@
         Y: =53
         ZIndex: =2
 
+    Icon7 As icon.BookmarkFilled:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Reload
+        OnSelect: =Refresh('salesOrders (v2.0)')
+        X: =554
+        Y: =53
+        ZIndex: =3
+

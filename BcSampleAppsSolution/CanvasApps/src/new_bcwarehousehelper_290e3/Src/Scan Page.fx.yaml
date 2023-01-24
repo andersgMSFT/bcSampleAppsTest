@@ -411,3 +411,32 @@
             Y: =130
             ZIndex: =6
 
+    Checkbox1 As checkbox:
+        CheckboxSize: =40
+        Height: =56
+        Size: =15
+        Text: ="Enable debug"
+        Width: =262
+        Y: =1080
+        ZIndex: =13
+
+    ComboBox1 As combobox:
+        DisplayFields: =["displayName"]
+        Height: =56
+        Items: ='items (v2.0)'
+        OnChange: |-
+            =Set(varScannedItem, First(Filter('items (v2.0)', id = ComboBox1.Selected.id)));
+            Set(varItemInventoryNumber, varScannedItem.inventory);
+            Set(varItemInventoryName, varScannedItem.displayName);
+            Set(varItemUnitOfMeasure, varScannedItem.baseUnitOfMeasureCode);
+            UpdateContext({ctxShowItemForm:true});
+        SearchFields: =["displayName"]
+        SearchItems: =Search('items (v2.0)',ComboBox1.SearchText,"displayName")
+        SelectMultiple: =false
+        Size: =21
+        Visible: =Checkbox1.Value
+        Width: =360
+        X: =279
+        Y: =1080
+        ZIndex: =14
+

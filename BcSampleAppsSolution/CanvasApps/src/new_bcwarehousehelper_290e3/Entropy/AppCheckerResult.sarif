@@ -254,109 +254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut.TabIndex"
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.displayName_DataCard1.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Scan Page",
-                "type": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut.AccessibleLabel",
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.displayName_DataCard1.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scan Page",
-                "type": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Scan Page",
-                "type": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Scan Page",
-                "type": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus"
+                "type": "'Scan Page'.conItemCard.item_form.displayName_DataCard1.DataCardValue2"
               }
             }
           ],
@@ -404,19 +314,139 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.displayName_DataCard1.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.displayName_DataCard1.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Scan Page",
-                "type": "'Scan Page'.conItemCard.item_form.displayName_DataCard1.DataCardValue2"
+                "type": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Scan Page",
+                "type": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnMinut"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scan Page",
+                "type": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Scan Page",
+                "type": "'Scan Page'.conItemCard.item_form.inventory_DataCard1.conItemInventory.icnPlus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Scan Page'.ComboBox1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Scan Page'.ComboBox1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Scan Page",
+                "type": "'Scan Page'.ComboBox1"
               }
             }
           ],

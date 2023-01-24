@@ -17,6 +17,9 @@
           "customers (v2.0)": {
             "tableName": "customers,v2.0"
           },
+          "items (v2.0)": {
+            "tableName": "items,v2.0"
+          },
           "itemsWithImage (microsoft/andersg/beta)": {
             "tableName": "itemsWithImage,microsoft%252Fandersg%252Fbeta"
           },
@@ -33,7 +36,8 @@
       "itemsWithImage (microsoft/andersg/beta)",
       "customers (v2.0)",
       "salesOrders (v2.0)",
-      "salesOrderLines (v2.0)"
+      "salesOrderLines (v2.0)",
+      "items (v2.0)"
     ],
     "dependencies": {},
     "dependents": [],
