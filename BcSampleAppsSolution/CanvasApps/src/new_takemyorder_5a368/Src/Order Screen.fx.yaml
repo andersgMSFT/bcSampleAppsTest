@@ -1,6 +1,8 @@
 "'Order Screen' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
-    OnVisible: =
+    OnVisible: |-
+        =ClearCollect(colItemGroup, {Result: "All"});
+        Collect(colItemGroup, Distinct('items (v2.0)',inventoryPostingGroupCode));
 
     lblHeader As label:
         Align: =Align.Center
@@ -14,6 +16,39 @@
         X: =40
         Y: =40
         ZIndex: =1
+
+    Gallery4 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =94
+        Items: =colItemGroup
+        TemplateSize: =158
+        Y: =247
+        ZIndex: =1
+
+        Button5 As button:
+            BorderColor: |-
+                =If(
+                    ThisItem.IsSelected,
+                    Black,
+                    Not(ThisItem.IsSelected),
+                    LightGray
+                )
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            FontWeight: =FontWeight.Semibold
+            Height: =73
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            OnSelect: =Select(Parent)
+            PaddingLeft: =0
+            PaddingRight: =0
+            Size: =24
+            Text: =ThisItem.Result
+            Width: =158
+            ZIndex: =1
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -148,9 +183,9 @@
             ZIndex: =5
 
     Container1 As groupContainer.manualLayoutContainer:
-        Height: =160
+        Height: =128
         Width: =640
-        Y: =156
+        Y: =131
         ZIndex: =3
 
         Label2 As label:
@@ -162,7 +197,6 @@
             Text: ="Number of items"
             Width: =253
             X: =15
-            Y: =9
             ZIndex: =1
 
         Label2_1 As label:
@@ -174,7 +208,7 @@
             Text: ="Total Price"
             Width: =253
             X: =15
-            Y: =79
+            Y: =57
             ZIndex: =2
 
         Label2_2 As label:
@@ -188,7 +222,6 @@
             Text: =Sum(colSelectedItems, quantity)
             Width: =218
             X: =295
-            Y: =9
             ZIndex: =3
 
         Label2_3 As label:
@@ -202,7 +235,7 @@
             Text: =Sum(colSelectedItems, price * quantity)
             Width: =218
             X: =295
-            Y: =79
+            Y: =52
             ZIndex: =4
 
     Button1 As button:
@@ -223,8 +256,8 @@
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: =Navigate('Selected Order Screen', ScreenTransition.Cover);
         Size: =24
-        Text: ="Create"
-        Width: =320
+        Text: ="Confirm"
+        Width: =640
         Y: =1066
         ZIndex: =4
 
@@ -243,20 +276,16 @@
         Y: =168
         ZIndex: =5
 
-    Button1_1 As button:
+    Icon6 As icon.Hamburger:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(100, 118, 132, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =70
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =37
+        Icon: =Icon.Hamburger
         OnSelect: =Navigate('History screen', ScreenTransition.Cover)
-        Size: =24
-        Text: ="History"
-        Width: =320
-        X: =320
-        Y: =1066
+        Width: =52
+        X: =565
+        Y: =20
         ZIndex: =6
 
