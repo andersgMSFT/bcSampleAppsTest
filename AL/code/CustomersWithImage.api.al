@@ -1,15 +1,15 @@
-page 50101 ItemWithImage
+page 50103 CustomersWithImage
 {
     PageType = API;
-    Caption = 'Item with image';
-    EntityName = 'itemWithImage';
-    EntitySetName = 'itemsWithImage';
+    Caption = 'Customers with image';
+    EntityName = 'CustomerWithImage';
+    EntitySetName = 'CustomersWithImage';
 
     APIPublisher = 'microsoft';
-    APIGroup = 'andersg';
+    APIGroup = 'powerApps';
     APIVersion = 'beta';
 
-    SourceTable = "Item";
+    SourceTable = Customer;
     DelayedInsert = true;
     ODataKeyFields = SystemId;
 
@@ -23,23 +23,27 @@ page 50101 ItemWithImage
                 {
                     Caption = 'System ID';
                 }
-                field(description; Rec.Description)
+                field(name; Rec.Name)
                 {
-                    Caption = 'Description';
+                    Caption = 'Name';
                 }
-                field("unitPrice"; Rec."Unit Price")
+                field(address; Rec.Address)
                 {
-                    Caption = 'Unit price';
+                    Caption = 'Address';
                 }
-                field(Inventory; Rec.Inventory)
+                field(mail; Rec."E-Mail")
                 {
-                    Caption = 'Inventory';
+                    Caption = 'E-Mail';
+                }
+                field(phone; Rec."Phone No.")
+                {
+                    Caption = 'Phone';
                 }
                 field(picture; NameValueBufferBlob."Value BLOB")
                 {
                     Caption = 'Picture';
                 }
-                field(itemImageText; Rec.Picture)
+                field(itemImageText; Rec.Image)
                 {
                     Caption = 'Picture reference';
                 }
@@ -65,24 +69,7 @@ page 50101 ItemWithImage
         NameValueBufferBlob."Value BLOB".CreateOutStream(OutStr);
 
         // **BEGIN**
-        // If the picture is of type Media, use this code:
-        // Rec.Picture.Image.ExportStream(OutStr);
-
-        // If the picture is of type MediaSet, use this code:
-        if Rec.Picture.Count > 0 then begin
-            // There are more than 1 pictures for this item. We take the first one.
-            MediaId := Rec.Picture.Item(1);
-
-            // This is ugly but there is no platform support
-            TenantMedia.SetAutoCalcFields(Content);
-            if not TenantMedia.Get(MediaID) then
-                exit;
-
-            TenantMedia.Content.CreateInStream(InStr);
-            CopyStream(OutStr, InStr);
-        end;
-        // **END**
-
+        Rec.Image.ExportStream(OutStr);
         NameValueBufferBlob.Insert();
     end;
 }
