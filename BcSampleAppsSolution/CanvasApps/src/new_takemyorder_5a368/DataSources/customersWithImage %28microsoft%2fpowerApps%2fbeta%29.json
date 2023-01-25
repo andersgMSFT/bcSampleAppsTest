@@ -7,18 +7,20 @@
       "RevisionNumber": 3
     },
     "ConnectedDataSourceInfoNameMapping": {
-      "description": "description",
+      "address": "address",
+      "displayName": "displayName",
       "id": "id",
-      "Inventory": "Inventory",
       "itemImageText": "itemImageText",
-      "picture": "picture",
-      "unitPrice": "unitPrice"
+      "mail": "mail",
+      "number": "number",
+      "phone": "phone",
+      "picture": "picture"
     },
-    "DatasetName": "sandbox,a2db7307-078b-ed11-aad8-000d3a21edc2",
+    "DatasetName": "SANDBOX,a2db7307-078b-ed11-aad8-000d3a21edc2",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "itemsWithImage (microsoft/andersg/beta)",
+    "Name": "customersWithImage (microsoft/powerApps/beta)",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

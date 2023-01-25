@@ -10,12 +10,7 @@
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: |
-            =Set(tempSelectedItem, First(colSelectedItems));
-            Set(tempImageBlank, IsBlank(tempSelectedItem.image));
-            Set(tempFullItem, LookUp('itemsWithImage (microsoft/andersg/beta)', id = tempSelectedItem.id));
-            Set(tempImageTextBlank, IsBlank(tempFullItem.itemImageText));
-            Set(tempImageTextBlank2, tempFullItem.itemImageText = GUID("00000000-0000-0000-0000-000000000000"));
+        OnSelect: =Set(varTempCustomer, LookUp('customersWithImage (microsoft/powerApps/beta)', customerNumber = "CT1001"));
         Size: =24
         Text: ="Button"
         Width: =280
