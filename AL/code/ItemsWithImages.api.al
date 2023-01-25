@@ -23,9 +23,13 @@ page 50101 ItemWithImage
                 {
                     Caption = 'System ID';
                 }
-                field(description; Rec.Description)
+                field(number; Rec."No.")
                 {
-                    Caption = 'Description';
+                    Caption = 'Number';
+                }
+                field(displayName; Rec.Description)
+                {
+                    Caption = 'DisplayName';
                 }
                 field("unitPrice"; Rec."Unit Price")
                 {
@@ -35,11 +39,15 @@ page 50101 ItemWithImage
                 {
                     Caption = 'Item Category Code';
                 }
+                field(baseUnitOfMeasureCode; Rec."Base Unit of Measure")
+                {
+                    Caption = 'Base Unit Of Measure Code';
+                }
                 field(inventoryPostingGroup; Rec."Inventory Posting Group")
                 {
                     Caption = 'Inventory Posting Group';
                 }
-                field(Inventory; Rec.Inventory)
+                field(inventory; Rec.Inventory)
                 {
                     Caption = 'Inventory';
                 }

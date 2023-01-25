@@ -23,9 +23,14 @@ page 50103 CustomersWithImage
                 {
                     Caption = 'System ID';
                 }
-                field(name; Rec.Name)
+                field(displayName; Rec.Name)
                 {
-                    Caption = 'Name';
+                    Caption = 'DisplayName';
+                }
+
+                field(number; Rec."No.")
+                {
+                    Caption = 'No.';
                 }
                 field(address; Rec.Address)
                 {
