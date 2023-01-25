@@ -14,14 +14,11 @@
     "datasets": {
       "sandbox,a2db7307-078b-ed11-aad8-000d3a21edc2": {
         "dataSources": {
-          "customers (v2.0)": {
-            "tableName": "customers,v2.0"
+          "customersWithImage (microsoft/powerApps/beta)": {
+            "tableName": "customersWithImage,microsoft%252FpowerApps%252Fbeta"
           },
-          "items (v2.0)": {
-            "tableName": "items,v2.0"
-          },
-          "itemsWithImage (microsoft/andersg/beta)": {
-            "tableName": "itemsWithImage,microsoft%252Fandersg%252Fbeta"
+          "itemsWithImage (microsoft/powerApps/beta)": {
+            "tableName": "itemsWithImage,microsoft%252FpowerApps%252Fbeta"
           },
           "salesOrderLines (v2.0)": {
             "tableName": "salesOrderLines,v2.0"
@@ -33,11 +30,10 @@
       }
     },
     "dataSources": [
-      "itemsWithImage (microsoft/andersg/beta)",
-      "customers (v2.0)",
       "salesOrders (v2.0)",
       "salesOrderLines (v2.0)",
-      "items (v2.0)"
+      "itemsWithImage (microsoft/powerApps/beta)",
+      "customersWithImage (microsoft/powerApps/beta)"
     ],
     "dependencies": {},
     "dependents": [],

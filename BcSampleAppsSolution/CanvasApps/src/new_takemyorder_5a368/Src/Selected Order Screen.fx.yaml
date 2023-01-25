@@ -1,6 +1,6 @@
 "'Selected Order Screen' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
-    OnVisible: =Set(varSelectedCustomer, LookUp('customers (v2.0)', number = "C00010"))
+    OnVisible: =Set(varSelectedCustomer, LookUp('customersWithImage (microsoft/powerApps/beta)', number = "C00010"))
 
     lblHeader_1 As label:
         Align: =Align.Center

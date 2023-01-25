@@ -40,7 +40,7 @@
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(0, 131, 143, 1)
         OnScan: |-
-            =Set(varScannedItem, First(Filter('items (v2.0)', number = BarcodeScanner.Value)));
+            =Set(varScannedItem, LookUp('itemsWithImage (microsoft/powerApps/beta)', number = BarcodeScanner.Value));
             Set(varItemInventoryNumber, varScannedItem.inventory);
             Set(varItemInventoryName, varScannedItem.displayName);
             Set(varItemUnitOfMeasure, varScannedItem.baseUnitOfMeasureCode);
@@ -96,7 +96,7 @@
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
             OnScan: |-
-                =Set(varScannedItem, First(Filter('items (v2.0)', number = BarcodeScannerSmall.Value)));
+                =Set(varScannedItem, First(Filter('itemsWithImage (microsoft/powerApps/beta)', number = BarcodeScannerSmall.Value)));
                 Set(varItemInventoryNumber, varScannedItem.inventory);
                 Set(varItemInventoryName, varScannedItem.displayName);
                 Set(varItemUnitOfMeasure, varScannedItem.baseUnitOfMeasureCode);
@@ -117,10 +117,10 @@
             BorderColor: =    
             BorderStyle: =BorderStyle.None
             BorderThickness: =4
-            DataSource: ='items (v2.0)'  
+            DataSource: ='itemsWithImage (microsoft/powerApps/beta)'
             Fill: =Transparent
             Height: =913
-            Item: =First(Filter('items (v2.0)', number = varScannedItem.number))
+            Item: =LookUp('itemsWithImage (microsoft/powerApps/beta)', id = varScannedItem.id)
             OnReset: =
             Visible: =ctxShowItemForm
             Width: =608
@@ -133,10 +133,10 @@
                 DataField: ="number"
                 Default: =ThisItem.number
                 DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@'items (v2.0)'],DataSourceInfo.DisplayName,"number")
+                DisplayName: =DataSourceInfo([@'itemsWithImage (microsoft/powerApps/beta)'],DataSourceInfo.DisplayName,"number")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =252
-                MaxLength: =DataSourceInfo([@'items (v2.0)'], DataSourceInfo.MaxLength, "number")
+                MaxLength: =DataSourceInfo([@'itemsWithImage (microsoft/powerApps/beta)'], DataSourceInfo.MaxLength, "number")
                 Required: =false
                 Update: =ThisItem.number
                 Width: =608
@@ -198,10 +198,10 @@
                 DataField: ="displayName"
                 Default: =ThisItem.displayName
                 DisplayMode: =DisplayMode.View
-                DisplayName: =DataSourceInfo([@'items (v2.0)'],DataSourceInfo.DisplayName,"displayName")
+                DisplayName: =DataSourceInfo([@'itemsWithImage (microsoft/powerApps/beta)'],DataSourceInfo.DisplayName,"displayName")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =217
-                MaxLength: =DataSourceInfo([@'items (v2.0)'], DataSourceInfo.MaxLength, "displayName")
+                MaxLength: =DataSourceInfo([@'itemsWithImage (microsoft/powerApps/beta)'], DataSourceInfo.MaxLength, "displayName")
                 Required: =false
                 Update: =DataCardValue2.Text
                 Width: =608
@@ -272,7 +272,7 @@
                 DataField: ="inventory"
                 Default: =varItemInventoryNumber
                 DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'items (v2.0)'],DataSourceInfo.DisplayName,"inventory")
+                DisplayName: =DataSourceInfo([@'itemsWithImage (microsoft/powerApps/beta)'],DataSourceInfo.DisplayName,"inventory")
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =386
                 Required: =false
@@ -423,15 +423,16 @@
     ComboBox1 As combobox:
         DisplayFields: =["displayName"]
         Height: =56
-        Items: ='items (v2.0)'
+        IsSearchable: =false
+        Items: ='itemsWithImage (microsoft/powerApps/beta)'
         OnChange: |-
-            =Set(varScannedItem, First(Filter('items (v2.0)', id = ComboBox1.Selected.id)));
+            =Set(varScannedItem, First(Filter('itemsWithImage (microsoft/powerApps/beta)', id = ComboBox1.Selected.id)));
             Set(varItemInventoryNumber, varScannedItem.inventory);
             Set(varItemInventoryName, varScannedItem.displayName);
             Set(varItemUnitOfMeasure, varScannedItem.baseUnitOfMeasureCode);
             UpdateContext({ctxShowItemForm:true});
         SearchFields: =["displayName"]
-        SearchItems: =Search('items (v2.0)',ComboBox1.SearchText,"displayName")
+        SearchItems: =[]
         SelectMultiple: =false
         Size: =21
         Visible: =Checkbox1.Value
