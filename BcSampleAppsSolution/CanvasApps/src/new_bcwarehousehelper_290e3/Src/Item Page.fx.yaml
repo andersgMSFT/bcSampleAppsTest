@@ -1,7 +1,7 @@
 "'Item Page' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(240, 240, 240, 1)
     OnVisible: |-
-        =UpdateContext({ctxInventory: varScannedItem.inventory})
+        =UpdateContext({ctxInventory: varScannedItem.inventory, ctxImage: varScannedItem.picture, ctxName: varScannedItem.displayName})
 
     Canvas1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -37,7 +37,7 @@
                 BorderThickness: =1
                 Fill: =White
                 Height: =600
-                Image: =varScannedItem.picture
+                Image: =ctxImage
                 RadiusBottomLeft: =50
                 RadiusBottomRight: =50
                 RadiusTopLeft: =50
@@ -52,7 +52,7 @@
                 Font: =Font.'Segoe UI'
                 Height: =73
                 Size: =34
-                Text: =varScannedItem.displayName
+                Text: =ctxName
                 Width: =560
                 X: =40
                 Y: =767
@@ -105,9 +105,13 @@
                 DisplayMode: =If(varScannedItem.inventory = ctxInventory, DisplayMode.Disabled, DisplayMode.Edit)
                 Height: =50
                 Icon: =Icon.Save
-                OnSelect: |-
-                    =// Patch('itemsWithImage (microsoft/powerApps/beta)', Defaults('itemsWithImage (microsoft/powerApps/beta)'), {id: varScannedItem.id, inventory: ctxInventory });
-                    Notify("Api does not support save yet")
+                OnSelect: |
+                    =// Note we are using the "normal" items API to update inventory
+                    Patch('items (v2.0)', LookUp('items (v2.0)', id = varScannedItem.id), {inventory: ctxInventory });
+                    
+                    // Update the scanned item value after patch
+                    Set(varScannedItem, LookUp('itemsWithImage (microsoft/powerApps/beta)', id = varScannedItem.id ));
+                    UpdateContext({ctxInventory: varScannedItem.inventory});
                 Width: =67
                 X: =533
                 Y: =35
@@ -129,9 +133,13 @@
         HoverBorderColor: =Black
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
-        OnScan: |-
-            =// Patch('itemsWithImage (microsoft/powerApps/beta)', Defaults('itemsWithImage (microsoft/powerApps/beta)'), {id: varScannedItem.id, inventory: ctxInventory });
-            Set(varScannedItem, First(Filter('itemsWithImage (microsoft/powerApps/beta)', number = BarcodeScannerSmall.Value)));
+        OnScan: |
+            =If(
+                Not(varScannedItem.inventory = ctxInventory),
+                Patch('items (v2.0)', LookUp('items (v2.0)', id = varScannedItem.id), {inventory: ctxInventory });    
+            );
+            
+            Set(varScannedItem, LookUp('itemsWithImage (microsoft/powerApps/beta)', number = BarcodeScannerSmall.Value ));
             UpdateContext({ctxInventory: varScannedItem.inventory});
         RadiusBottomLeft: =350
         RadiusBottomRight: =350

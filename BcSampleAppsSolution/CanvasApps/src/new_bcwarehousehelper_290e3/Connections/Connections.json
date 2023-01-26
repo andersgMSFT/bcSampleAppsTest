@@ -17,6 +17,9 @@
           "itemReferences (microsoft/powerApps/beta)": {
             "tableName": "itemReferences,microsoft%252FpowerApps%252Fbeta"
           },
+          "items (v2.0)": {
+            "tableName": "items,v2.0"
+          },
           "itemsWithImage (microsoft/powerApps/beta)": {
             "tableName": "itemsWithImage,microsoft%252FpowerApps%252Fbeta"
           },
@@ -29,7 +32,8 @@
     "dataSources": [
       "itemsWithImage (microsoft/powerApps/beta)",
       "itemReferences (microsoft/powerApps/beta)",
-      "locations (v2.0)"
+      "locations (v2.0)",
+      "items (v2.0)"
     ],
     "dependencies": {},
     "dependents": [],
