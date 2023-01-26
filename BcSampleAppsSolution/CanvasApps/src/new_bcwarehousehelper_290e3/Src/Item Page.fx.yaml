@@ -1,0 +1,146 @@
+"'Item Page' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(240, 240, 240, 1)
+    OnVisible: |-
+        =UpdateContext({ctxInventory: varScannedItem.inventory})
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =971
+        Width: =Parent.Width
+        ZIndex: =3
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =962
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            lblScanPageDescription_2 As label:
+                Align: =Align.Center
+                Font: =Font.'Segoe UI'
+                Height: =64
+                Size: =22
+                Text: =varSelectedWarehouse.displayName
+                Width: =637
+                X: =3
+                Y: =28
+                ZIndex: =1
+
+            Image3 As image:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderThickness: =1
+                Fill: =White
+                Height: =600
+                Image: =varScannedItem.picture
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =600
+                X: =20
+                Y: =140
+                ZIndex: =2
+
+            lblWelcomeText_2 As label:
+                Align: =Align.Center
+                Font: =Font.'Segoe UI'
+                Height: =73
+                Size: =34
+                Text: =varScannedItem.displayName
+                Width: =560
+                X: =40
+                Y: =767
+                ZIndex: =3
+
+            TextInput1 As text:
+                Align: =Align.Center
+                BorderColor: |-
+                    =If(
+                        varScannedItem.inventory = ctxInventory,
+                        RGBA(166,166,166,1),
+                        Not(varScannedItem.inventory = ctxInventory),
+                        Yellow
+                    )
+                Default: =ctxInventory
+                Height: =70
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Size: =30
+                Width: =295
+                X: =174
+                Y: =871
+                ZIndex: =4
+
+            Icon6 As icon.Add:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Icon: =Icon.HorizontalLine
+                OnSelect: |-
+                    =UpdateContext({ctxInventory: ctxInventory - 1})
+                X: =506
+                Y: =877
+                ZIndex: =5
+
+            Icon2 As icon.ChevronDown:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =37
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Back(ScreenTransition.Fade)
+                Width: =46
+                X: =30
+                Y: =42
+                ZIndex: =6
+
+            Icon2_1 As icon.ChevronDown:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisplayMode: =If(varScannedItem.inventory = ctxInventory, DisplayMode.Disabled, DisplayMode.Edit)
+                Height: =50
+                Icon: =Icon.Save
+                OnSelect: |-
+                    =// Patch('itemsWithImage (microsoft/powerApps/beta)', Defaults('itemsWithImage (microsoft/powerApps/beta)'), {id: varScannedItem.id, inventory: ctxInventory });
+                    Notify("Api does not support save yet")
+                Width: =67
+                X: =533
+                Y: =35
+                ZIndex: =7
+
+            Icon5 As icon.Add:
+                Icon: =Icon.Add
+                OnSelect: |-
+                    =UpdateContext({ctxInventory: ctxInventory + 1})
+                X: =76
+                Y: =874
+                ZIndex: =8
+
+    BarcodeScannerSmall As barcodeScanner:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        Height: =116
+        HoverBorderColor: =Black
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        OnScan: |-
+            =// Patch('itemsWithImage (microsoft/powerApps/beta)', Defaults('itemsWithImage (microsoft/powerApps/beta)'), {id: varScannedItem.id, inventory: ctxInventory });
+            Set(varScannedItem, First(Filter('itemsWithImage (microsoft/powerApps/beta)', number = BarcodeScannerSmall.Value)));
+            UpdateContext({ctxInventory: varScannedItem.inventory});
+        RadiusBottomLeft: =350
+        RadiusBottomRight: =350
+        RadiusTopLeft: =350
+        RadiusTopRight: =350
+        Size: =22
+        Text: =If(varScannedItem.inventory = ctxInventory, "Scan", "Update and scan")
+        Width: =270
+        X: =185
+        Y: =1002
+        ZIndex: =5
+

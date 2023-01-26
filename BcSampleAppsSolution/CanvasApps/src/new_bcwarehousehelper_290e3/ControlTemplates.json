@@ -83,47 +83,33 @@
     "OverridableProperties": {},
     "Version": "2.4.0"
   },
-  "dataTable": {
+  "dataCard": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/dataTable",
+    "Id": "http://microsoft.com/appmagic/card",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "dataTable",
+    "Name": "dataCard",
     "OverridableProperties": {},
     "Version": "1.0.2"
   },
-  "dataTableColumn": {
+  "fluidGrid": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/dataTableColumn",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "dataTableColumn",
-    "OverridableProperties": {},
-    "Version": "1.0.1"
-  },
-  "form": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/form",
+    "Id": "http://microsoft.com/appmagic/fluidGrid",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "form",
+    "Name": "fluidGrid",
     "OverridableProperties": {},
-    "Version": "2.3.2"
+    "Version": "2.3.0"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -167,20 +153,6 @@
     "OverridableProperties": {},
     "Version": "1.1.0"
   },
-  "htmlViewer": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/htmlViewer",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "htmlViewer",
-    "OverridableProperties": {},
-    "Version": "2.1.0"
-  },
   "icon": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -222,20 +194,6 @@
     "Name": "label",
     "OverridableProperties": {},
     "Version": "2.5.1"
-  },
-  "rectangle": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/shapes/rectangle",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "rectangle",
-    "OverridableProperties": {},
-    "Version": "2.3.0"
   },
   "screen": {
     "CustomGroupControlTemplateName": "",
@@ -293,18 +251,18 @@
     "OverridableProperties": {},
     "Version": "2.3.2"
   },
-  "typedDataCard": {
+  "timer": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/card",
+    "Id": "http://microsoft.com/appmagic/timer",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
+    "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "typedDataCard",
+    "Name": "timer",
     "OverridableProperties": {},
-    "Version": "1.0.5"
+    "Version": "2.1.0"
   }
 }
