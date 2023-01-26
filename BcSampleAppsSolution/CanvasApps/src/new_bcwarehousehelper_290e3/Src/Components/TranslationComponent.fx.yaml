@@ -1,0 +1,42 @@
+TranslationComponent As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =30
+    Labels: |-
+        =LookUp(
+            varTranslations,
+            Language = Lower(
+                Coalesce(
+                    Self.Language,
+                    Language()
+                )
+            )).Labels
+    Language: ="Text"
+    OnReset: |-
+        =Set(
+            varTranslations,
+            Table(
+                {
+                    Language: "en-us",
+                    Labels: {
+                        warehouseScreen_header: "Hi",
+                        warehouseScreen_body: "Pick a warehouse to start",
+                        scanScreen_header: "",
+                        scanscreen_body: ""
+                    }
+                },
+                {
+                    Language: "da-dk",
+                    Labels: {
+                        warehouseScreen_header: "UI Tips for building canvas apps",
+                        warehouseScreen_body: "Power Platform Specialist",
+                        scanScreen_header: "",
+                        scanscreen_body: ""
+                    }
+                }
+            )
+        )
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+

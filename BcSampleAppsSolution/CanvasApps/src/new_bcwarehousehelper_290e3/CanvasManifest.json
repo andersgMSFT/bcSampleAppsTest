@@ -113,7 +113,10 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "Splash screen",
+    "Warehouse Page",
     "Scan Page",
+    "Item Page",
     "Test screen"
   ]
 }
