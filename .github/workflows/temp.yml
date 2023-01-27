@@ -15,4 +15,4 @@ jobs:
 
     steps:
     - name: Create branch
-      run: git checkout -b workflow/${github.input.branchName}; git push 
+      run: git checkout -b workflow/${github.events.inputs.branchName}; git push 
