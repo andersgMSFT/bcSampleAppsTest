@@ -10,7 +10,7 @@ env:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment: Dev
+    environment: staging
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
