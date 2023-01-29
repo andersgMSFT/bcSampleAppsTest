@@ -42,11 +42,11 @@ jobs:
         run: echo "Please create a new branch to avoid direct commits to main. Current branch -->" + ${{github.ref_name}};  exit 2;
 
       - name: Checkout code
-        if: github.event.input.createBranch != 'true'
+        if: github.event.inputs.createBranch != 'true'
         uses: actions/checkout@v3
 
       - name: Checkout new branch
-        if: github.event.input.createBranch == 'true'
+        if: github.event.inputs.createBranch == 'true'
         uses: actions/checkout@v3
         with:
           ref: ${{env.newBranchName}}
