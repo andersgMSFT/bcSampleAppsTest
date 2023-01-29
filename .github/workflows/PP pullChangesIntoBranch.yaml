@@ -21,7 +21,7 @@ env:
 
 jobs:
   prepare-branch: 
-    if: github.event.inputs.createBranch == "true"
+    if: github.event.inputs.createBranch == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -88,7 +88,7 @@ jobs:
         run: .github/actions/script/commitGitChanges.ps1 -solutionName ${{github.event.inputs.solutionName}} -environmentName ${{github.event.inputs.environment}}
 
   create-PR: 
-    if: github.event.inputs.createBranch == "true"
+    if: github.event.inputs.createBranch == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout new branch
