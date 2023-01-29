@@ -31,6 +31,7 @@ jobs:
         run: git checkout -b ${{env.newBranchName}}; git push --set-upstream origin ${{env.newBranchName}}
     
   get-changes:
+    needs: [prepare-branch]
     runs-on: ubuntu-latest
     environment: ${{github.event.inputs.environment}}
     env:
@@ -88,6 +89,7 @@ jobs:
         run: .github/actions/script/commitGitChanges.ps1 -solutionName ${{github.event.inputs.solutionName}} -environmentName ${{github.event.inputs.environment}}
 
   create-PR: 
+    needs: [get-changes]
     if: github.event.inputs.createBranch == 'true'
     runs-on: ubuntu-latest
     steps:
