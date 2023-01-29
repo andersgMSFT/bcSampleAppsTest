@@ -21,13 +21,14 @@ env:
 
 jobs:
   prepare-branch: 
-    if: github.event.inputs.createBranch == 'true'
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Create branch
+      - name: Create new branch
+        if: github.event.inputs.createBranch == 'true'
         run: git checkout -b ${{env.newBranchName}}; git push --set-upstream origin ${{env.newBranchName}}
     
   get-changes:
