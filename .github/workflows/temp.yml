@@ -12,10 +12,17 @@ on:
 jobs:
   prepareBranch:
     runs-on: ubuntu-latest
+    
+    env: 
+      newBranchName: workflow/${{github.event.inputs.branchName}};
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
       
     - name: Create branch
-      run: git checkout -b workflow/${{github.event.inputs.branchName}}; git push --set-upstream origin workflow/${{github.event.inputs.branchName}};
+      run: git checkout -b ${{env.newBranchName}} git push --set-upstream origin ${{env.newBranchName}}
+      
+    - name: Create pull request
+      run: |
+        hub pull-request -b main -h my-new-branch -m "Pull latest changes from <insert name>" -l "update app"
