@@ -21,7 +21,6 @@ env:
 
 jobs:
   prepare-branch: 
-
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -39,7 +38,7 @@ jobs:
       solutionUniqueName: ${{github.event.inputs.solutionName}}
     steps:
       - name: Check if main branch
-        if: github.ref_name == 'main' && github.event.input.createBranch == 'true'
+        if: github.ref_name == 'main' && github.event.input.createBranch != 'true'
         run: echo "Please create a new branch to avoid direct commits to main. Current branch -->" + ${{github.ref_name}};  exit 2;
 
       - name: Checkout code
