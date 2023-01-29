@@ -11,8 +11,25 @@ on:
         type: text
         description: The name of the solution
         default: BcSampleAppsSolution
+      createBranch: 
+        type: boolean
+        description: Create a new branch and PR
+        default: true
+
+env: 
+  newBranchName: workflow/pullFrom_${{github.event.inputs.environment}}
 
 jobs:
+  prepare-branch: 
+    if: github.event.inputs.createBranch == "true"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create branch
+        run: git checkout -b ${{env.newBranchName}}; git push --set-upstream origin ${{env.newBranchName}}
+    
   get-changes:
     runs-on: ubuntu-latest
     environment: ${{github.event.inputs.environment}}
@@ -20,18 +37,18 @@ jobs:
       solutionUniqueName: ${{github.event.inputs.solutionName}}
     steps:
       - name: Check if main branch
-        if: ${{github.ref_name == 'main'}}
+        if: github.ref_name == 'main' && github.event.input.createBranch == 'true'
         run: echo "Please create a new branch to avoid direct commits to main. Current branch -->" + ${{github.ref_name}};  exit 2;
 
-      - name: Assign unique solution name
-        if: ${{github.event.inputs.useDev}}
-        run: echo "solutionUniqueName=${{github.event.inputs.solutionName}}__${{github.actor}}" >> $GITHUB_ENV
-
-      - name: Show unique solution name
-        run: echo $solutionUniqueName
-
       - name: Checkout code
+        if: github.event.input.createBranch != 'true'
         uses: actions/checkout@v3
+
+      - name: Checkout new branch
+        if: github.event.input.createBranch == 'true'
+        uses: actions/checkout@v3
+        with:
+          ref: ${{env.newBranchName}}
 
       - name: who-am-i action
         uses: microsoft/powerplatform-actions/who-am-i@v0
@@ -69,3 +86,16 @@ jobs:
       - name: Commit changes (if there are any)
         shell: pwsh
         run: .github/actions/script/commitGitChanges.ps1 -solutionName ${{github.event.inputs.solutionName}} -environmentName ${{github.event.inputs.environment}}
+
+  create-PR: 
+    if: github.event.inputs.createBranch == "true"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout new branch
+        uses: actions/checkout@v3
+        with:
+          ref: ${{env.newBranchName}}
+
+      - name: Create pull request
+        run: |
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -X POST -d '{ "title": "Pull PP changes", "head": "${{env.newBranchName}}", "base": "main", "body": "This is the pull request body", "labels": ["enhancement", "bug"] }' https://api.github.com/repos/${{ github.repository }}/pulls
