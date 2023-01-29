@@ -19,17 +19,7 @@ on:
 env: 
   newBranchName: workflow/pullFrom_${{github.event.inputs.environment}}
 
-jobs:
-  prepare-branch: 
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Create new branch
-        if: github.event.inputs.createBranch == 'true'
-        run: git checkout -b ${{env.newBranchName}}; git push --set-upstream origin ${{env.newBranchName}}
-    
+jobs:    
   get-changes:
     needs: [prepare-branch]
     runs-on: ubuntu-latest
@@ -42,15 +32,12 @@ jobs:
         run: echo "Please create a new branch to avoid direct commits to main. Current branch -->" + ${{github.ref_name}};  exit 2;
 
       - name: Checkout code
-        if: github.event.inputs.createBranch != 'true'
         uses: actions/checkout@v3
-
-      - name: Checkout new branch
+        
+      - name: Create new branch
         if: github.event.inputs.createBranch == 'true'
-        uses: actions/checkout@v3
-        with:
-          ref: ${{env.newBranchName}}
-
+        run: git checkout -b ${{env.newBranchName}}; git push --set-upstream origin ${{env.newBranchName}}
+    
       - name: who-am-i action
         uses: microsoft/powerplatform-actions/who-am-i@v0
         with:
