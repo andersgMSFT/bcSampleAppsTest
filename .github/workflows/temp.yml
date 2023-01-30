@@ -13,7 +13,7 @@ jobs:
     - name: Download release artifact
       shell: pwsh
       run: |
-        .github/actions/script/updateSolutionFile.ps1
+        .github/actions/script/gitGetReleaseArtifact.ps1
 
     - name: List files in folder
       run: |
