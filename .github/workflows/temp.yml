@@ -10,8 +10,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       
-    - name: Download release artifact 
-      run: .github\actions\script\gitGetReleaseArtifact.ps1 
+    - name: Download release artifact
+      shell: pwsh
+      run: |
+        .github/actions/script/updateSolutionFile.ps1
 
     - name: List files in folder
       run: |
