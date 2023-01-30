@@ -10,11 +10,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       
-    - name: Download release artifact
-      run: |
-        $response = Invoke-WebRequest -Uri https://api.github.com/repos/andersgMSFT/powerAppsTest/releases/latest
-        $downloadUrl = ($response.Content | ConvertFrom-Json).assets | Where-Object { $_.name -eq "solutions.zip" } | Select-Object -ExpandProperty browser_download_url
-        Invoke-WebRequest -Uri $downloadUrl -OutFile solutions.zip
+    - name: Download release artifact 
+      run: .github\actions\script\gitGetReleaseArtifact.ps1 
 
     - name: List files in folder
       run: |
