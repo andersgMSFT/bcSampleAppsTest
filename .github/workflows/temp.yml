@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  prepareBranch:
+  get-artifact:
     runs-on: ubuntu-latest
     
     steps:
