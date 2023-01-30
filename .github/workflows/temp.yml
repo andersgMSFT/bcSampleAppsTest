@@ -1,18 +1,21 @@
 name: Manual workflow
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-        branchName:
-          # Default value if no value is explicitly provided
-          default: 'newBranch'
-          # Input has to be provided for the workflow to run
-          required: true
 
 jobs:
   prepareBranch:
     runs-on: ubuntu-latest
-
+    
     steps:
-    - name: Create branch
-      run: git checkout -b workflow/${{github.event.inputs.branchName}}; git push 
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Download release artifact
+      run: |
+        $response = Invoke-WebRequest -Uri https://api.github.com/repos/andersgMSFT/powerAppsTest/releases/latest
+        $downloadUrl = ($response.Content | ConvertFrom-Json).assets | Where-Object { $_.name -eq "solutions.zip" } | Select-Object -ExpandProperty browser_download_url
+        Invoke-WebRequest -Uri $downloadUrl -OutFile solutions.zip
+
+    - name: List files in folder
+      run: |
+        ls -la
