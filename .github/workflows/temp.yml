@@ -12,7 +12,9 @@ jobs:
       
     - name: Download release artifact
       run: |
-        curl -s https://api.github.com/repos/andersgMSFT/powerAppsTest/releases/latest
+        $response = Invoke-WebRequest -Uri https://api.github.com/repos/andersgMSFT/powerAppsTest/releases/latest
+        $downloadUrl = ($response.Content | ConvertFrom-Json).assets | Where-Object { $_.name -eq "solutions.zip" } | Select-Object -ExpandProperty browser_download_url
+        Invoke-WebRequest -Uri $downloadUrl -OutFile solutions.zip
 
     - name: List files in folder
       run: |
