@@ -12,7 +12,7 @@ jobs:
       
     - name: Download release artifact
       run: |
-        curl -s https://api.github.com/repos/andersgMSFT/powerAppsTest/releases/latest | grep "browser_download_url" | grep "1.7 - BcSampleAppsSolution(QA).zip" | cut -d '"' -f 4
+        curl -s https://api.github.com/repos/andersgMSFT/powerAppsTest/releases/latest
 
     - name: List files in folder
       run: |
