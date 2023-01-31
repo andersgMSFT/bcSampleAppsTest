@@ -3,22 +3,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  get-artifact:
+  example_matrix:
     runs-on: ubuntu-latest
-    
+    strategy:
+      matrix:
+        solution: [sol.zip, sol2.zip]
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      
-    - name: List files in folder
-      run: |
-        ls -la
-
-    - name: Download release artifact
-      shell: pwsh
-      run: |
-        .github/actions/script/gitGetReleaseArtifact.ps1
-
-    - name: List files in folder
-      run: |
-        ls -la
+      - name: WriteIt
+        run: echo ${{ matrix.solution}}
