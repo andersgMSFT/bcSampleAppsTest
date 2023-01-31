@@ -1,0 +1,24 @@
+name: Manual workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  get-artifact:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: List files in folder
+      run: |
+        ls -la
+
+    - name: Download release artifact
+      shell: pwsh
+      run: |
+        .github/actions/script/gitGetReleaseArtifact.ps1
+
+    - name: List files in folder
+      run: |
+        ls -la
