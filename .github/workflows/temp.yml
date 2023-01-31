@@ -2,12 +2,19 @@ name: Manual workflow
 on:
   workflow_dispatch:
 
-jobs:
+  
+jobs:  
+  get-data: 
+    runs-on: ubuntu-latest
+    outputs:
+      solutions: "[1, 2, 3, 4]"
+
   example_matrix:
+    needs: [get-data]
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        solution: [sol.zip, sol2.zip]
+        solution: ${{ fromJson(needs.get-data.outputs.solutions) }}
     steps:
       - name: WriteIt
         run: echo ${{ matrix.solution}}
