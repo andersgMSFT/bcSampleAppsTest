@@ -1,7 +1,6 @@
-name: ENV TESR workflow
+name: ENV Test workflow
 on:
   workflow_dispatch:
-
   
 jobs:  
   get-data: 
