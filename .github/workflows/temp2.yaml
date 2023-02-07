@@ -4,12 +4,13 @@ on:
   
 jobs:  
   JobName:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps: 
       - name: first
         run: echo test
         
       - name: findSolutionFile
+        shell: powershell
         run: |
             $file = "anderstestpath.zip";
             Write-Host "Found match:"$file;
