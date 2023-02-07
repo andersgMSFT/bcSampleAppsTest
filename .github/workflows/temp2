@@ -1,0 +1,30 @@
+name: Manual workflow
+on:
+  workflow_dispatch:
+
+  
+jobs:  
+  get-data: 
+    runs-on: ubuntu-latest
+    outputs:
+      solutions: "[1, 2, 3, 4]"
+    steps: 
+      - name: first
+        run: echo test
+        
+      - name: findSolutionFile
+        shell: ${{inputs.shell}}
+        run: |
+            $file = "anderstestpath.zip";
+            Write-Host "Found match:"$file;
+            Add-Content -Path $env:GITHUB_OUTPUT -Value "powerPlatformSolutionPath=$file";
+            echo "{powerPlatformSolutionPath}={$file}" >> $GITHUB_ENV
+              
+    - name: Unpack solution artifact
+      uses: microsoft/powerplatform-actions/unpack-solution@v0
+      with:
+        solution-file: ${{ env.powerPlatformSolutionPath }}
+        solution-folder: test.zip
+        solution-type: "Unmanaged"
+        overwrite-files: true
+        process-canvas-apps: true
