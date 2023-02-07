@@ -10,7 +10,6 @@ jobs:
         run: echo test
         
       - name: findSolutionFile
-        shell: ${{inputs.shell}}
         run: |
             $file = "anderstestpath.zip";
             Write-Host "Found match:"$file;
