@@ -18,13 +18,15 @@ jobs:
       - name: Use the value
         shell: powershell
         run: |
-          echo "${{ steps.findSolutionFile.outputs.authContext }}"
+          echo "${{ steps.findSolutionFile.outputs.powerPlatformSolutionPath }}"
           echo "${{ env.powerPlatformSolutionPath }}"
+          echo steps.findSolutionFile.outputs.powerPlatformSolutionPath
+          echo env.powerPlatformSolutionPath
                  
       - name: Unpack solution artifact
         uses: microsoft/powerplatform-actions/unpack-solution@v0
         with:
-          solution-file: ${{ steps.findSolutionFile2.outputs.authContext }}
+          solution-file: ${{ steps.findSolutionFile.outputs.powerPlatformSolutionPath }}
           solution-folder: test.zip
           solution-type: "Unmanaged"
           overwrite-files: true
