@@ -16,6 +16,7 @@ jobs:
             echo "{powerPlatformSolutionPath}={$file}" >> $GITHUB_ENV
       
       - name: Use the value
+        shell: powershell
         run: |
           echo "${{ steps.findSolutionFile.outputs.authContext }}"
           echo "${{ env.powerPlatformSolutionPath }}"
