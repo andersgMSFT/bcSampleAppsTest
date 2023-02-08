@@ -10,22 +10,19 @@ jobs:
       - name: findSolutionFile
         shell: powershell
         run: |
-            $file = "anderstestpath.zip";
+            $file = "anderstestpath/path";
             Write-Host "Found match:"$file;
             echo "powerPlatformSolutionPath=$file" >> $env:GITHUB_ENV
       
       - name: Use the value
         shell: powershell
         run: |
-          echo "${{ steps.findSolutionFile.outputs.powerPlatformSolutionPath }}"
           echo "${{ env.powerPlatformSolutionPath }}"
-          echo steps.findSolutionFile.outputs.powerPlatformSolutionPath
-          echo env.powerPlatformSolutionPath
                  
       - name: Unpack solution artifact
         uses: microsoft/powerplatform-actions/unpack-solution@v0
         with:
-          solution-file: ${{ steps.findSolutionFile.outputs.powerPlatformSolutionPath }}
+          solution-file: ${{ env.powerPlatformSolutionPath }}
           solution-folder: test.zip
           solution-type: "Unmanaged"
           overwrite-files: true
