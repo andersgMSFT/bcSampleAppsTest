@@ -12,8 +12,7 @@ jobs:
         run: |
             $file = "anderstestpath.zip";
             Write-Host "Found match:"$file;
-            Add-Content -Path $env:GITHUB_OUTPUT -Value "powerPlatformSolutionPath=$file";
-            echo "{powerPlatformSolutionPath}={$file}" >> $GITHUB_ENV
+            echo "{powerPlatformSolutionPath}={$file}" >> $env:GITHUB_ENV
       
       - name: Use the value
         shell: powershell
