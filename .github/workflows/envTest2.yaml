@@ -9,8 +9,8 @@ jobs:
       - name: Set color
         id: random-color-generator
         run: |
-          echo "SELECTED_COLOR=blue" >> $GITHUB_OUTPUT
-          echo "SELECTED_COLOR=blue" >> $GITHUB_ENV
+          echo "SELECTED_COLOR=blue" >> $env:GITHUB_OUTPUT
+          echo "SELECTED_COLOR=blue" >> $env:GITHUB_ENV
         
       - name: Get color
         run: |
