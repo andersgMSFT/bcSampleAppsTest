@@ -10,28 +10,23 @@
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(varTempCustomer, LookUp('customersWithImage (microsoft/powerApps/beta)', customerNumber = "CT1001"));
+        OnSelect: =Set(vartempTest, 'companyInformation (v2.0)')
         Size: =24
         Text: ="Button"
         Width: =280
-        X: =171
-        Y: =942
+        X: =205
+        Y: =113
         ZIndex: =1
 
-    Button4 As button:
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+    Label1 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(100, 118, 132, 1)
-        FontWeight: =FontWeight.Semibold
         Height: =70
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Set(varItemGroups, Distinct('items (v2.0)',inventoryPostingGroupCode))
-        Size: =24
-        Text: ="Button"
-        Width: =280
-        X: =95
-        Y: =320
+        Size: =21
+        Text: =Office365Users.MyProfile().DisplayName
+        Width: =560
+        X: =36
+        Y: =405
         ZIndex: =2
 

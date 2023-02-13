@@ -95,7 +95,7 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "d34d10ac-cb45-44b0-b76c-075e7414beaa",
-    "Id": "d34d10ac-cb45-44b0-b76c-075e7414beaa",
+    "Id": "281d1bcd-d583-4b8b-a693-3baad94d2032",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "Name": "Take My Order",
@@ -113,10 +113,12 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "Start screen",
     "Order Screen",
     "Selected Order Screen",
     "History screen",
     "Done order screen",
-    "test screen"
+    "test screen",
+    "Order Screen_1"
   ]
 }

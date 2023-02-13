@@ -6,12 +6,19 @@
     "connectionRef": {
       "apiTier": "Premium",
       "displayName": "Dynamics 365 Business Central",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/dynamicssmbsaas/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1617/1.0.1617.3171/dynamicssmbsaas/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas",
       "parameterHints": {},
       "parameterHintsV2": {}
     },
     "datasets": {
+      "PRODUCTION,a2db7307-078b-ed11-aad8-000d3a21edc2": {
+        "dataSources": {
+          "companyInformation (v2.0)": {
+            "tableName": "companyInformation,v2.0"
+          }
+        }
+      },
       "sandbox,a2db7307-078b-ed11-aad8-000d3a21edc2": {
         "dataSources": {
           "customersWithImage (microsoft/powerApps/beta)": {
@@ -25,6 +32,9 @@
           },
           "salesOrders (v2.0)": {
             "tableName": "salesOrders,v2.0"
+          },
+          "users (microsoft/automation/v2.0)": {
+            "tableName": "users,microsoft%252Fautomation%252Fv2.0"
           }
         }
       }
@@ -33,10 +43,29 @@
       "salesOrders (v2.0)",
       "salesOrderLines (v2.0)",
       "itemsWithImage (microsoft/powerApps/beta)",
-      "customersWithImage (microsoft/powerApps/beta)"
+      "customersWithImage (microsoft/powerApps/beta)",
+      "companyInformation (v2.0)",
+      "users (microsoft/automation/v2.0)"
     ],
     "dependencies": {},
     "dependents": [],
     "id": "aae83c9c-696b-45a6-8171-5eb3b316643e"
+  },
+  "edc50207-c5a7-44a8-a0b7-7120a20a896d": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1611/1.0.1611.3104/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "edc50207-c5a7-44a8-a0b7-7120a20a896d"
   }
 }
