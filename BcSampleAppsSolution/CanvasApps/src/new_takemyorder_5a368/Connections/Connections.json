@@ -32,9 +32,6 @@
           },
           "salesOrders (v2.0)": {
             "tableName": "salesOrders,v2.0"
-          },
-          "users (microsoft/automation/v2.0)": {
-            "tableName": "users,microsoft%252Fautomation%252Fv2.0"
           }
         }
       }
@@ -44,8 +41,7 @@
       "salesOrderLines (v2.0)",
       "itemsWithImage (microsoft/powerApps/beta)",
       "customersWithImage (microsoft/powerApps/beta)",
-      "companyInformation (v2.0)",
-      "users (microsoft/automation/v2.0)"
+      "companyInformation (v2.0)"
     ],
     "dependencies": {},
     "dependents": [],
@@ -56,9 +52,12 @@
       "sku": "Enterprise"
     },
     "connectionRef": {
+      "apiTier": "Standard",
       "displayName": "Office 365 Users",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1611/1.0.1611.3104/office365users/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
     },
     "datasets": {},
     "dataSources": [
