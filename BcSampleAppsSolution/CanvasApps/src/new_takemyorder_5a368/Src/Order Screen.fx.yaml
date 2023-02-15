@@ -1,8 +1,7 @@
 "'Order Screen' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
-        =ClearCollect(colItemGroup, {Result: "Full menu"});
-        Collect(colItemGroup, Distinct('itemsWithImage (microsoft/powerApps/beta)', inventoryPostingGroup));
+        =UpdateContext({ctxShowQuantityControlForIs: Blank()});
 
     conButtom As groupContainer.manualLayoutContainer:
         Height: =117
@@ -248,7 +247,7 @@
                     =If(
                         Not(IsBlank(ctxShowQuantityControlForIs)),
                         UpdateContext({ctxShowQuantityControlForIs: Blank()}),
-                        Navigate('Item Details Screen', ScreenTransition.Cover, {ctxSelectedItem: ThisItem, ctxSelectedItemQuantity: LookUp(colSelectedItems, id = ThisItem.id).quantity})
+                        Navigate('Item Details Screen', ScreenTransition.Fade, {ctxSelectedItem: ThisItem, ctxSelectedItemQuantity: LookUp(colSelectedItems, id = ThisItem.id).quantity})
                     )
                 PressedFill: =Transparent
                 Width: =550
@@ -428,13 +427,15 @@
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayMode: =If(Sum(colSelectedItems, quantity), DisplayMode.Edit, DisplayMode.Disabled)
+        DisplayMode: =If(Sum(colSelectedItems, quantity) > 0, DisplayMode.Edit, DisplayMode.Disabled)
         Fill: =ColorValue(varBrandColor)
         FontWeight: =FontWeight.Semibold
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Navigate('Selected Order Screen', ScreenTransition.Cover);
+        OnSelect: |-
+            =UpdateContext({ctxShowQuantityControlForIs: Blank()});
+            Navigate('Current Order', ScreenTransition.Cover);
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
@@ -443,7 +444,7 @@
         Text: ="Review"
         Width: =280
         X: =180
-        Y: =994
+        Y: =985
         ZIndex: =3
 
     conTop As groupContainer.manualLayoutContainer:

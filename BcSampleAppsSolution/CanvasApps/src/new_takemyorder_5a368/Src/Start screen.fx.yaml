@@ -1,6 +1,82 @@
 "'Start screen' As screen":
     Fill: =ColorValue(varBrandColor)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({ctxLoading: true });
+        
+        ClearCollect(colItemGroup,{Result:"Full menu"});
+        Concurrent(
+            Set(varUserName,Office365Users.MyProfile().DisplayName),
+            Set(varCompanyName,First('companyInformation (v2.0)').displayName),
+            Set(varWarmUpItems,'itemsWithImage (microsoft/powerApps/beta)'),
+            Set(varTableName,Filter('customersWithImage (microsoft/powerApps/beta)',"Table" in displayName)),
+            Collect(colItemGroup,Distinct('itemsWithImage (microsoft/powerApps/beta)',inventoryPostingGroup))
+        );
+        UpdateContext({ctxLoading: false });
+
+    conLoadedData As groupContainer.manualLayoutContainer:
+        Height: =655
+        Visible: =Not(ctxLoading)
+        Width: =640
+        Y: =480
+        ZIndex: =1
+
+        lblWaiterName As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =53
+            Size: =22
+            Text: =Office365Users.MyProfile().DisplayName
+            Width: =500
+            X: =78
+            Y: =293
+            ZIndex: =1
+
+        lblWaiterLabel As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =53
+            Size: =22
+            Text: |-
+                ="Waitress:"
+            Width: =500
+            X: =78
+            Y: =240
+            ZIndex: =2
+
+        lblCompanyName As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =129
+            Size: =35
+            Text: =First('companyInformation (v2.0)').displayName
+            Width: =500
+            X: =90
+            Y: =23
+            ZIndex: =3
+
+    lblLoadingLabel As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =129
+        Size: =25
+        Text: ="Loading company information..."
+        Visible: =ctxLoading
+        Width: =460
+        X: =86
+        Y: =604
+        ZIndex: =2
 
     lblAppName As label:
         Align: =Align.Center
@@ -12,46 +88,7 @@
         Text: ="Take my order"
         Width: =640
         Y: =396
-        ZIndex: =1
-
-    lblCompanyName As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =129
-        Size: =35
-        Text: =First('companyInformation (v2.0)').displayName
-        Width: =640
-        Y: =529
-        ZIndex: =2
-
-    lblWaiterLabel As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =53
-        Size: =22
-        Text: |-
-            ="Waitress:"
-        Width: =640
-        Y: =751
         ZIndex: =3
-
-    lblWaiterName As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =53
-        Size: =22
-        Text: =Office365Users.MyProfile().DisplayName
-        Width: =640
-        Y: =804
-        ZIndex: =4
 
     imgLogo As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -62,20 +99,28 @@
         Width: =320
         X: =156
         Y: =76
-        ZIndex: =5
+        ZIndex: =4
 
-    timLoadTrigger As timer:
-        AutoStart: =true
-        Duration: =2000  
-        Fill: =RGBA(100, 118, 132, 1)
+    btnStart As button:
+        BorderColor: =White
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(ctxLoading, DisplayMode.Disabled, DisplayMode.Edit)
+        Fill: =ColorValue(varBrandColor)
+        FontWeight: =FontWeight.Semibold
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnTimerEnd: =Navigate('Order Screen', ScreenTransition.Fade)
-        Start: =true
-        Visible: =false
+        OnSelect: =Navigate('Order Screen');
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =20
+        Text: ="Start"
         Width: =280
         X: =180
-        Y: =36
-        ZIndex: =6
+        Y: =985
+        ZIndex: =5
 

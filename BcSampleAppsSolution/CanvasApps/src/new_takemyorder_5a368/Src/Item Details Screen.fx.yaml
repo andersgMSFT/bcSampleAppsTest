@@ -6,10 +6,10 @@
         Color: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Icon: =Icon.ChevronLeft
-        OnSelect: =Back(ScreenTransition.UnCoverRight)
-        X: =30
-        Y: =30
+        Icon: =Icon.Cancel
+        OnSelect: =Back(ScreenTransition.Fade)
+        X: =537
+        Y: =27
         ZIndex: =1
 
     Label3 As label:
@@ -21,8 +21,8 @@
         PaddingRight: =25
         Size: =21
         Text: ="Item Details"
-        Width: =496
-        X: =94
+        Width: =461
+        X: =30
         Y: =27
         ZIndex: =2
 

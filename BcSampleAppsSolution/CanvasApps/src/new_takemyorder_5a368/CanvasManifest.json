@@ -116,10 +116,11 @@
     "Start screen",
     "Order Screen",
     "Item Details Screen",
-    "Selected Order Screen",
+    "Current Order",
     "History screen",
     "Done order screen",
     "test screen",
-    "Order Screen_1"
+    "(old) Order Screen",
+    "(old) Selected Order Screen"
   ]
 }

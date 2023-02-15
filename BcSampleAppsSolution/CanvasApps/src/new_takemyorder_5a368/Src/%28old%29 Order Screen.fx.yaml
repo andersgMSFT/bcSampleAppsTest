@@ -1,4 +1,4 @@
-"'Order Screen_1' As screen":
+"'(old) Order Screen' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
         =ClearCollect(colItemGroup, {Result: "All"});
@@ -265,7 +265,7 @@
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Navigate('Selected Order Screen', ScreenTransition.Cover);
+        OnSelect: =Navigate('(old) Selected Order Screen', ScreenTransition.Cover);
         Size: =24
         Text: ="Confirm"
         Width: =640

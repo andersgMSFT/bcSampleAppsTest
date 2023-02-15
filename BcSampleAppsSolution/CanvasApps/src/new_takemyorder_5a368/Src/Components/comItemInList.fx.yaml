@@ -1,0 +1,68 @@
+comItemInList As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =100
+    image: =SampleImage
+    imageRef: =GUID("00000000-0000-0000-0000-000000000000")
+    Name: ="Athens desk"
+    price: ="1044.50"
+    Width: =500
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    imgItemImage_2 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderThickness: =1
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =80
+        Image: |-
+            =If(
+                Not(comItemInList.imageRef = "00000000-0000-0000-0000-000000000000"),
+                comItemInList.image,
+                placeholder
+            )
+        OnSelect: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Width: =80
+        X: =10
+        Y: =10
+        ZIndex: =1
+
+    lblItemDisplayName_2 As label:
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =20
+        Text: =comItemInList.Name
+        VerticalAlign: =VerticalAlign.Top
+        Width: =400
+        X: =100     
+        Y: =10
+        ZIndex: =2
+
+    lblItemPrice_2 As label:
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =39
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =18
+        Text: ="$"&comItemInList.price
+        VerticalAlign: =VerticalAlign.Top
+        Width: =214
+        X: =100 
+        Y: =50  
+        ZIndex: =3
+
