@@ -8,7 +8,7 @@
 
     lblWelcomeText As label:
         Align: =Align.Center
-        Font: =Font.'Segoe UI'
+        Font: =varTheme.font
         Height: =173
         Size: =34
         Text: =varSelectedWarehouse.displayName
@@ -19,7 +19,7 @@
 
     lblScanPageDescription As label:
         Align: =Align.Center
-        Font: =Font.'Segoe UI'
+        Font: =varTheme.font
         Height: =144
         Size: =22
         Text: ="Scan an item to see and update its inventory count "
@@ -33,7 +33,7 @@
         BorderThickness: =4
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 131, 143, 1)
-        Font: =Font.'Segoe UI'
+        Font: =varTheme.font
         FontWeight: =FontWeight.Normal
         Height: =350
         HoverBorderColor: =Black

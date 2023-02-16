@@ -40,6 +40,7 @@ comItemInList As CanvasComponent:
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
+        Font: =varTheme.font
         PaddingTop: =0
         Size: =20
         Text: =comItemInList.Name
@@ -57,6 +58,7 @@ comItemInList As CanvasComponent:
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
+        Font: =varTheme.font
         PaddingTop: =0
         Size: =18
         Text: ="$"&comItemInList.price

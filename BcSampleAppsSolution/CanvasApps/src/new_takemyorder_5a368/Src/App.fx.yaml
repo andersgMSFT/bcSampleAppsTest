@@ -2,7 +2,7 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |-
         =Set(varTheme, {
-            font: Font.'Segoe UI',
+            font: varTheme.font,
             primaryColor:  ColorValue("#615B4C"),
             textSizeSmall: 16,
             textSizeMedium: 20,

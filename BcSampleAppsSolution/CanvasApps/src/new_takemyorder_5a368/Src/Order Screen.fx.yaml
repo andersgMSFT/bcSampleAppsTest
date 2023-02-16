@@ -479,7 +479,7 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(0, 0, 0, 0)
-                Font: =Font.'Segoe UI'
+                Font: =varTheme.font
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Bold, FontWeight.Semibold)
                 Height: =50
                 HoverBorderColor: =Transparent

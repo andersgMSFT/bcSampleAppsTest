@@ -8,7 +8,7 @@
 
     lblWelcomeText_1 As label:
         Align: =Align.Center
-        Font: =Font.'Segoe UI'
+        Font: =varTheme.font
         Height: =173
         Size: =34
         Text: ="Hi "& 'Office365-brugere'.MyProfile().DisplayName
@@ -47,7 +47,7 @@
 
         lblScanPageDescription_3 As label:
             Align: =Align.Center
-            Font: =Font.'Segoe UI'
+            Font: =varTheme.font
             Height: =47
             Size: =22
             Text: =ThisItem.displayName
@@ -58,7 +58,7 @@
 
         lblScanPageDescription_4 As label:
             Align: =Align.Center
-            Font: =Font.'Segoe UI'
+            Font: =varTheme.font
             Height: =47
             Size: =22
             Text: =If(Not(IsBlank(ThisItem.city)), ThisItem.city, IsBlank(ThisItem.city), ThisItem.country) 
@@ -86,7 +86,7 @@
 
     lblScanPageDescription_1 As label:
         Align: =Align.Center
-        Font: =Font.'Segoe UI'
+        Font: =varTheme.font
         Height: =144
         Size: =22
         Text: ="Select a warehouse to get started"
