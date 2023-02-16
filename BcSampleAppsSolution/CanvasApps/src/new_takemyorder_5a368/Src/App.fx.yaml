@@ -1,5 +1,20 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =Set(varBrandColor, "#615B4C");
+        =Set(varTheme, {
+            font: Font.'Segoe UI',
+            primaryColor:  ColorValue("#615B4C"),
+            textSizeSmall: 16,
+            textSizeMedium: 20,
+            textSizeBig: 24,
+            textSizeExtraBig: 32,
+            iconSizeSmall: 28,
+            iconSizeMedium: 32,
+            iconSizeBig: 44,
+            smallSpace: 15,
+            bigSpace: 20,
+            rowHeight: 86,
+            topArea: 136, 
+            buttonArea: 88
+        });
 

@@ -1,5 +1,5 @@
 "'Start screen' As screen":
-    Fill: =ColorValue(varBrandColor)
+    Fill: =varTheme.primaryColor
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
         =UpdateContext({ctxLoading: true });
@@ -15,10 +15,11 @@
         UpdateContext({ctxLoading: false });
 
     conLoadedData As groupContainer.manualLayoutContainer:
-        Height: =655
+        Height: =435
         Visible: =Not(ctxLoading)
         Width: =640
-        Y: =480
+        X: =(Parent.Width / 2) - (conLoadedData.Width / 2)
+        Y: =(Parent.Height/2) - 100
         ZIndex: =1
 
         lblWaiterName As label:
@@ -30,8 +31,8 @@
             Height: =53
             Size: =22
             Text: =Office365Users.MyProfile().DisplayName
-            Width: =500
-            X: =78
+            Width: =576
+            X: =32
             Y: =293
             ZIndex: =1
 
@@ -44,8 +45,8 @@
             Size: =22
             Text: |-
                 ="Waitress:"
-            Width: =500
-            X: =78
+            Width: =536
+            X: =52
             Y: =240
             ZIndex: =2
 
@@ -58,8 +59,8 @@
             Height: =129
             Size: =35
             Text: =First('companyInformation (v2.0)').displayName
-            Width: =500
-            X: =90
+            Width: =608
+            X: =16
             Y: =23
             ZIndex: =3
 
@@ -69,13 +70,12 @@
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =129
+        Height: =130
         Size: =25
         Text: ="Loading company information..."
         Visible: =ctxLoading
-        Width: =460
-        X: =86
-        Y: =604
+        Width: =Parent.Width
+        Y: =(Parent.Height/2) - 50
         ZIndex: =2
 
     lblAppName As label:
@@ -86,7 +86,7 @@
         Height: =70
         Size: =25
         Text: ="Take my order"
-        Width: =640
+        Width: =Parent.Width
         Y: =396
         ZIndex: =3
 
@@ -97,7 +97,7 @@
         Height: =320
         Image: =tempLogo
         Width: =320
-        X: =156
+        X: =(Parent.Width / 2) - (imgLogo.Width / 2)
         Y: =76
         ZIndex: =4
 
@@ -107,7 +107,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =If(ctxLoading, DisplayMode.Disabled, DisplayMode.Edit)
-        Fill: =ColorValue(varBrandColor)
+        Fill: =varTheme.primaryColor
         FontWeight: =FontWeight.Semibold
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
@@ -120,7 +120,7 @@
         Size: =20
         Text: ="Start"
         Width: =280
-        X: =180
-        Y: =985
+        X: =(Parent.Width / 2) - (btnStart.Width / 2)
+        Y: =Parent.Height - 120
         ZIndex: =5
 

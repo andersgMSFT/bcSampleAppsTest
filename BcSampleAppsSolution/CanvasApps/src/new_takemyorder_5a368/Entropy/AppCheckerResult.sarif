@@ -14,6 +14,2886 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronHoverBackground"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronHoverBackground",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronHoverBackground",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conTop.drpSelectCustomer"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronHoverBackground"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronHoverBackground",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronHoverBackground",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conTop.drpSelectCustomer"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronHoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronHoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronHoverFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conTop.drpSelectCustomer"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronHoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronHoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronHoverFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conTop.drpSelectCustomer"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conTop.drpSelectCustomer"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conTop.drpSelectCustomer.ChevronFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conTop.drpSelectCustomer"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conTop.Gallery4_3.Rectangle2.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conTop.Gallery4_3.Rectangle2.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conTop.Gallery4_3.Rectangle2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conTop.Gallery4_3.Rectangle2.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conTop.Gallery4_3.Rectangle2.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conTop.Gallery4_3.Rectangle2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.DisabledFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.DisabledFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisabledFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.DisabledFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.DisabledFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisabledFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.PressedFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.PressedFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "PressedFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.PressedFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground.PressedFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "PressedFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCBackground"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCQuantity.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCQuantity.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCQuantity"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCQuantity.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCQuantity.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.btnQCQuantity"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCAddItem.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCAddItem.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCAddItem"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCAddItem.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCAddItem.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.conQuantityControl.icnQCAddItem"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.icnAddItem.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.icnAddItem.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.icnAddItem"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.icnAddItem.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.icnAddItem.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.icnAddItem"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.btnQuantity.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.btnQuantity.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.btnQuantity"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.btnQuantity.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.btnQuantity.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.btnQuantity"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.btnQuantity.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.btnQuantity.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.btnQuantity"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.btnQuantity.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.btnQuantity.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.btnQuantity"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.figItemSeparator.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.figItemSeparator.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.figItemSeparator"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.figItemSeparator.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.conMid.galItems.figItemSeparator.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.conMid.galItems.figItemSeparator"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.btnReview.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.btnReview.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.btnReview"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Order Screen'.btnReview.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Order Screen'.btnReview.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Order Screen",
+                "type": "'Order Screen'.btnReview"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Item Details Screen'.btnQuantity_1.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Item Details Screen'.btnQuantity_1.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Item Details Screen",
+                "type": "'Item Details Screen'.btnQuantity_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Item Details Screen'.btnQuantity_1.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Item Details Screen'.btnQuantity_1.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Item Details Screen",
+                "type": "'Item Details Screen'.btnQuantity_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Item Details Screen'.btnQuantity_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Item Details Screen'.btnQuantity_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Item Details Screen",
+                "type": "'Item Details Screen'.btnQuantity_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Item Details Screen'.btnQuantity_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Item Details Screen'.btnQuantity_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Item Details Screen",
+                "type": "'Item Details Screen'.btnQuantity_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronHoverBackground"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronHoverBackground",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronHoverBackground",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronHoverBackground"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronHoverBackground",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronHoverBackground",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronHoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronHoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronHoverFill",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronHoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronHoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronHoverFill",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronFill",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.ChevronFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "ChevronFill",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.SelectionColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.SelectionColor",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "SelectionColor",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.SelectionColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.SelectionColor",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "SelectionColor",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conHeader.Rectangle1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conHeader.Rectangle1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conHeader.Rectangle1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conHeader.Rectangle1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conHeader.Rectangle1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conHeader.Rectangle1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.DisabledFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.DisabledFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisabledFill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.DisabledFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.DisabledFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisabledFill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.PressedFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.PressedFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "PressedFill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.PressedFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1.PressedFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "PressedFill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCBackground_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCQuantity_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCQuantity_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCQuantity_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCQuantity_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.btnQCQuantity_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.btnQCQuantity_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.icnQCRemoveItem_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.icnQCRemoveItem_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.icnQCRemoveItem_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.icnQCRemoveItem_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.icnQCRemoveItem_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.icnQCRemoveItem_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.icnQCAddItem_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.icnQCAddItem_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.icnQCAddItem_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.icnQCAddItem_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conQuantityControl_1.icnQCAddItem_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conQuantityControl_1.icnQCAddItem_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.icnAddItem_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.icnAddItem_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.icnAddItem_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.icnAddItem_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.icnAddItem_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.icnAddItem_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.btnQuantity_2.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.btnQuantity_2.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.btnQuantity_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.btnQuantity_2.HoverFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.btnQuantity_2.HoverFill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "HoverFill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.btnQuantity_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.btnQuantity_2.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.btnQuantity_2.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.btnQuantity_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.btnQuantity_2.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.btnQuantity_2.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.btnQuantity_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.figItemSeparator_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.figItemSeparator_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.figItemSeparator_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.figItemSeparator_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.figItemSeparator_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.figItemSeparator_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.btnReview_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.btnReview_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "varBrandColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.btnReview_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varBrandColor"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.btnReview_1.Fill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.btnReview_1.Fill",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 25,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ColorValue(varBrandColor)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Fill",
+                "module": "Current Order",
+                "type": "'Current Order'.btnReview_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ColorValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'(old) Selected Order Screen'.Icon5_1.AccessibleLabel"
                 }
               ],
@@ -37,7 +2917,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -67,7 +2947,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -97,7 +2977,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -127,7 +3007,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -157,7 +3037,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -187,7 +3067,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -217,7 +3097,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -247,7 +3127,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -277,7 +3157,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -307,7 +3187,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -337,7 +3217,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -367,7 +3247,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -397,7 +3277,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -427,7 +3307,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -457,7 +3337,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -487,7 +3367,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -517,7 +3397,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -547,7 +3427,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -577,7 +3457,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -607,7 +3487,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -637,7 +3517,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -667,7 +3547,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -697,7 +3577,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -727,7 +3607,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -757,7 +3637,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -787,7 +3667,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -817,7 +3697,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -847,7 +3727,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -877,7 +3757,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -907,7 +3787,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -937,7 +3817,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -967,7 +3847,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -997,7 +3877,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1027,7 +3907,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1057,7 +3937,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1087,7 +3967,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1117,7 +3997,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1147,7 +4027,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1177,7 +4057,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1207,157 +4087,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Current Order'.galItems_1.figItemOverlay_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Current Order'.galItems_1.figItemOverlay_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Current Order",
-                "type": "'Current Order'.galItems_1.figItemOverlay_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Current Order",
-                "type": "'Current Order'.drpSelectCustomer_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Current Order'.galItems_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Current Order'.galItems_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Current Order",
-                "type": "'Current Order'.galItems_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Current Order'.galItems_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Current Order'.galItems_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Current Order",
-                "type": "'Current Order'.galItems_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Current Order'.Icon6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Current Order'.Icon6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Current Order",
-                "type": "'Current Order'.Icon6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1387,7 +4117,217 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.Icon6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.Icon6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Current Order",
+                "type": "'Current Order'.Icon6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.drpSelectCustomer_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Current Order",
+                "type": "'Current Order'.drpSelectCustomer_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conHeader.Rectangle4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conHeader.Rectangle4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conHeader.Rectangle4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conHeader.Rectangle4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.conHeader.Rectangle4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.conHeader.Rectangle4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.figItemOverlay_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Current Order'.galItems_1.figItemOverlay_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Current Order",
+                "type": "'Current Order'.galItems_1.figItemOverlay_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1417,7 +4357,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1447,7 +4387,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1477,7 +4417,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1507,7 +4447,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1537,7 +4477,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1567,26 +4507,26 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varFirstHeight"
+                  "fullyQualifiedName": "'Current Order'.ctxShowQuantityControl"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varFirstHeight",
+                  "fullyQualifiedName": "'Current Order'.ctxShowQuantityControl",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varFirstHeight",
-                "module": "App",
-                "type": "App"
+                "member": "ctxShowQuantityControl",
+                "module": "Current Order",
+                "type": "'Current Order'"
               }
             }
           ],
@@ -1597,7 +4537,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 4
         }
       ],
       "tool": {
@@ -1605,6 +4545,37 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidArgs-Func",
+              "messageStrings": {
+                "issue": {
+                  "text": "The function '{0}' has some invalid arguments."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
             {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {
