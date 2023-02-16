@@ -26,7 +26,7 @@
       "taxRegistrationNumber": "taxRegistrationNumber",
       "website": "website"
     },
-    "DatasetName": "PRODUCTION,a2db7307-078b-ed11-aad8-000d3a21edc2",
+    "DatasetName": "sandbox,a2db7307-078b-ed11-aad8-000d3a21edc2",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,

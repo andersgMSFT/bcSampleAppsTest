@@ -7,8 +7,8 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =91
         Font: =varTheme.font
+        Height: =91
         Size: =40
         Text: ="Current order"
         Width: =560
@@ -29,13 +29,13 @@
         Title8 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             FontWeight: =FontWeight.Semibold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
-            Font: =varTheme.font
             PaddingTop: =0
             Size: =20
             Text: =ThisItem.description
@@ -48,10 +48,10 @@
         Subtitle8 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
-            Font: =varTheme.font
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
@@ -66,10 +66,10 @@
         Body2 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =56
             OnSelect: =Select(Parent)
             PaddingBottom: =0
-            Font: =varTheme.font
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
@@ -133,9 +133,9 @@
                 AutoHeight: =true
                 Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 Height: =48
                 Size: =21
-                Font: =varTheme.font
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -175,13 +175,13 @@
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
-                Font: =varTheme.font
                 PaddingTop: =0
                 Size: =24
                 Text: =Parent.Error
@@ -195,9 +195,9 @@
                 Align: =Align.Center
                 Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 Height: =DataCardKey2.Height
                 Size: =21
-                Font: =varTheme.font
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -225,9 +225,9 @@
                 AutoHeight: =true
                 Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 Height: =48
                 Size: =21
-                Font: =varTheme.font
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -264,11 +264,11 @@
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
-                Font: =varTheme.font
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -283,8 +283,8 @@
             StarVisible3 As label:
                 Align: =Align.Center
                 Color: =RGBA(32, 54, 71, 1)
-                Font: =varTheme.font
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 Height: =DataCardKey4.Height
                 Size: =21
                 Text: ="*"

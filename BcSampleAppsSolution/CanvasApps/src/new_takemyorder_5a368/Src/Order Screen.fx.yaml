@@ -75,10 +75,20 @@
             Layout: =Layout.Vertical
             OnSelect: =
             TemplatePadding: =0
-            TemplateSize: =123
+            TemplateSize: =varTheme.rowHeight
             Width: =Parent.Width
             Y: =10
             ZIndex: =1
+
+            figItemSeparator As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =varTheme.primaryColor
+                Height: =2
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth - 40
+                X: =20
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =1
 
             imgItemImage As image:
                 BorderColor: =RGBA(32, 54, 71, 1)
@@ -101,7 +111,7 @@
                 Width: =80
                 X: =20
                 Y: =20
-                ZIndex: =1
+                ZIndex: =2
 
             lblItemDisplayName As label:
                 Color: =RGBA(0, 0, 0, 1)
@@ -119,7 +129,7 @@
                 Width: =371
                 X: =124
                 Y: =20
-                ZIndex: =2
+                ZIndex: =3
 
             lblItemPrice As label:
                 Color: =RGBA(0, 0, 0, 1)
@@ -131,12 +141,32 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =18
-                Text: =ThisItem.unitPrice
+                Text: |
+                    =Text(ThisItem.unitPrice, "$#,##0.00")
                 VerticalAlign: =VerticalAlign.Top
                 Width: =296
                 X: =124
                 Y: =61
-                ZIndex: =3
+                ZIndex: =4
+
+            figItemOverlay As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                DisabledFill: =Transparent
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =Parent.TemplateHeight
+                HoverFill: =Transparent
+                OnSelect: |-
+                    =If(
+                        Not(IsBlank(ctxShowQuantityControlForIs)),
+                        // Dismiss the quantity control
+                        UpdateContext({ctxShowQuantityControlForIs: Blank()}),
+                        // Open the selected Item
+                        Navigate('Item Details Screen', ScreenTransition.Fade, {ctxSelectedItem: ThisItem, ctxSelectedItemQuantity: LookUp(colSelectedItems, id = ThisItem.id).quantity})
+                    )
+                PressedFill: =Transparent
+                Width: =Parent.TemplateWidth
+                Y: =1
+                ZIndex: =5
 
             icnAddItem As icon.ChevronRight:
                 AccessibleLabel: =Self.Tooltip
@@ -144,29 +174,17 @@
                 Color: =varTheme.primaryColor
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =70
+                Height: =varTheme.iconSizeSmall
                 Icon: =Icon.Add
                 OnSelect: |-
-                    =UpdateContext(
-                        {
-                            ctxSelectedItemInList: LookUp(
-                                colSelectedItems,
-                                id = ThisItem.id
-                            )
-                        }
-                    );
-                    UpdateContext(
-                        {
-                            ctxImageProperty: If(
-                                ThisItem.itemImageText = GUID("00000000-0000-0000-0000-000000000000"),
-                                placeholder,
-                                ThisItem.picture
-                            )
-                        }
-                    );
+                    =// Clear quantity control if it is showing
+                    UpdateContext({ctxShowQuantityControlForIs: Blank()});
+                    // Check if item is in list
+                    UpdateContext({ ctxIsItemInList: IsBlank(LookUp(colSelectedItems, id = ThisItem.id))});
+                    
                     If(
-                        // Item is not in list
-                        IsBlank(ctxSelectedItemInList),
+                        ctxIsItemInList,
+                        // Add item to list
                         Collect(
                             colSelectedItems,
                             {
@@ -175,35 +193,28 @@
                                 price: ThisItem.unitPrice,
                                 group: ThisItem.inventoryPostingGroup,
                                 quantity: 1,
-                                image: ctxImageProperty
+                                // Use placeholder image if the image is not provided
+                                image: If(
+                                    ThisItem.itemImageText = GUID("00000000-0000-0000-0000-000000000000"),
+                                    placeholder,
+                                    ThisItem.picture
+                                )
                             }
-                        ),
-                        // Item is in the list
+                        );
+                        ,
+                        // Update item quantity
                         Patch(
                             colSelectedItems,
-                            ctxSelectedItemInList,
-                            {quantity: ctxSelectedItemInList.quantity + 1}
+                            {id: ThisItem.id},
+                            {quantity: Value(btnQCQuantity.Text) + 1}
                         )
                     );
-                    
-                    // Clear quantity control
-                    UpdateContext({ctxShowQuantityControlForIs: Blank()});
                 TabIndex: =0
                 Tooltip: ="View item details"
-                Width: =70
-                X: =Parent.Width - 90
-                Y: =30
-                ZIndex: =4
-
-            figItemSeparator As rectangle:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Fill: =varTheme.primaryColor
-                Height: =2
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth - 40
-                X: =20
-                Y: =Parent.TemplateHeight - 1
-                ZIndex: =5
+                Width: =varTheme.iconSizeSmall
+                X: =Parent.Width - (icnAddItem.Width/2) - 50
+                Y: =(galItems.TemplateHeight /2) - (icnAddItem.Height /2)
+                ZIndex: =6
 
             btnQuantity As button:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -211,7 +222,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =varTheme.primaryColor
                 FontWeight: =FontWeight.Semibold
-                Height: =70
+                Height: =varTheme.iconSizeBig
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =varTheme.primaryColor
                 OnSelect: |-
@@ -231,26 +242,9 @@
                         ),
                         Not(ctxShowQuantityControl)
                     )
-                Width: =70
-                X: =Parent.Width - 90
-                Y: =30
-                ZIndex: =6
-
-            figItemOverlay As rectangle:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                DisabledFill: =Transparent
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =122
-                HoverFill: =Transparent
-                OnSelect: |-
-                    =If(
-                        Not(IsBlank(ctxShowQuantityControlForIs)),
-                        UpdateContext({ctxShowQuantityControlForIs: Blank()}),
-                        Navigate('Item Details Screen', ScreenTransition.Fade, {ctxSelectedItem: ThisItem, ctxSelectedItemQuantity: LookUp(colSelectedItems, id = ThisItem.id).quantity})
-                    )
-                PressedFill: =Transparent
-                Width: =Parent.Width - 100
-                Y: =1
+                Width: =varTheme.iconSizeBig
+                X: =Parent.Width - (btnQuantity.Width/2) - 50
+                Y: =(galItems.TemplateHeight /2) - (btnQuantity.Height /2)
                 ZIndex: =7
 
             conQuantityControl As groupContainer.manualLayoutContainer:
@@ -321,18 +315,10 @@
                     Height: =50
                     Icon: =Icon.Add
                     OnSelect: |-
-                        =UpdateContext(
-                            {
-                                ctxSelectedItemInList: LookUp(
-                                    colSelectedItems,
-                                    id = ThisItem.id
-                                )
-                            }
-                        );
-                        Patch(
+                        =Patch(
                             colSelectedItems,
-                            ctxSelectedItemInList,
-                            {quantity: ctxSelectedItemInList.quantity + 1}
+                            {id: ThisItem.id},
+                            {quantity: Value(btnQCQuantity.Text) + 1}
                         )
                     TabIndex: =0
                     Tooltip: ="View item details"
@@ -397,20 +383,12 @@
                     Height: =50
                     Icon: =Icon.HorizontalLine
                     OnSelect: |-
-                        =UpdateContext(
-                            {
-                                ctxSelectedItemInList: LookUp(
-                                    colSelectedItems,
-                                    id = ThisItem.id
-                                )
-                            }
-                        );
-                        If(
-                            ctxSelectedItemInList.quantity > 0,
+                        =If(
+                            Value(btnQCQuantity.Text) > 0,
                             Patch(
                                 colSelectedItems,
-                                ctxSelectedItemInList,
-                                {quantity: ctxSelectedItemInList.quantity - 1}
+                                {id: ThisItem.id},
+                                {quantity: Value(btnQCQuantity.Text) - 1}
                             )
                         )
                     PaddingLeft: =5

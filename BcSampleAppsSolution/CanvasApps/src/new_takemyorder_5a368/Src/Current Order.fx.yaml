@@ -180,8 +180,8 @@
             lblItemDisplayName_1 As label:
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                FontWeight: =FontWeight.Semibold
                 Font: =varTheme.font
+                FontWeight: =FontWeight.Semibold
                 Height: =29
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -480,8 +480,8 @@
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =36
             Font: =varTheme.font
+            Height: =36
             Size: =21
             Text: |-
                 ="Items:"
@@ -506,9 +506,9 @@
         Label2_13 As label:
             Align: =Align.Right
             BorderColor: =RGBA(32, 54, 71, 1)
-            Font: =varTheme.font
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =36
             Size: =21
             Text: |-
@@ -521,9 +521,9 @@
         Label2_15 As label:
             Align: =Align.Right
             BorderColor: =RGBA(32, 54, 71, 1)
-            Font: =varTheme.font
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =36
             Size: =21
             Text: ="$"&Sum(colSelectedItems, price * quantity)
