@@ -24,10 +24,10 @@
         ChevronBackground: =White
         ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
         ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronFill: =ColorValue(varBrandColor)
-        ChevronHoverBackground: =ColorValue(varBrandColor)
-        ChevronHoverFill: =ColorValue(varBrandColor)
-        Color: =ColorValue(varBrandColor)
+        ChevronFill: =varTheme.primaryColor
+        ChevronHoverBackground: =varTheme.primaryColor
+        ChevronHoverFill: =varTheme.primaryColor
+        Color: =varTheme.primaryColor
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -39,7 +39,7 @@
         PaddingLeft: =20
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(32, 54, 71, 1)
-        SelectionColor: =ColorValue(varBrandColor)
+        SelectionColor: =varTheme.primaryColor
         SelectionFill: =RGBA(100, 118, 132, 1)
         Size: =28
         Width: =211
@@ -105,7 +105,7 @@
 
             Rectangle1 As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Fill: =ColorValue(varBrandColor)
+                Fill: =varTheme.primaryColor
                 Height: =5
                 OnSelect: =
                 Width: =Parent.Width -20
@@ -214,7 +214,7 @@
             icnAddItem_1 As icon.ChevronRight:
                 AccessibleLabel: =Self.Tooltip
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =ColorValue(varBrandColor)
+                Color: =varTheme.primaryColor
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =70
@@ -246,7 +246,7 @@
 
             figItemSeparator_1 As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Fill: =ColorValue(varBrandColor)
+                Fill: =varTheme.primaryColor
                 Height: =2
                 OnSelect: =Select(Parent)
                 Visible: =Not(IsBlank(ThisItem.quantity))
@@ -259,11 +259,11 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =ColorValue(varBrandColor)
+                Fill: =varTheme.primaryColor
                 FontWeight: =FontWeight.Semibold
                 Height: =70
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorValue(varBrandColor)
+                HoverFill: =varTheme.primaryColor
                 OnSelect: |-
                     =UpdateContext({ctxShowQuantityControlForIs: ThisItem.id})
                 RadiusBottomLeft: =35
@@ -310,16 +310,16 @@
                     BorderThickness: =1
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =ColorValue(varBrandColor)
+                    DisabledFill: =varTheme.primaryColor
                     DisplayMode: =DisplayMode.View
-                    Fill: =ColorValue(varBrandColor)
+                    Fill: =varTheme.primaryColor
                     FontWeight: =FontWeight.Semibold
                     Height: =70
                     HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorValue(varBrandColor)
+                    HoverFill: =varTheme.primaryColor
                     OnSelect: |-
                         =UpdateContext({ctxShowQuantityControl: true})
-                    PressedFill: =ColorValue(varBrandColor)
+                    PressedFill: =varTheme.primaryColor
                     RadiusBottomLeft: =35
                     RadiusBottomRight: =35
                     RadiusTopLeft: =35
@@ -358,7 +358,7 @@
                 icnQCAddItem_1 As icon.ChevronRight:
                     AccessibleLabel: =Self.Tooltip
                     BorderColor: =RGBA(32, 54, 71, 1)
-                    Color: =ColorValue(varBrandColor)
+                    Color: =varTheme.primaryColor
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(244, 244, 244, 1)
                     Height: =50
@@ -390,7 +390,7 @@
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
-                    Fill: =ColorValue(varBrandColor)
+                    Fill: =varTheme.primaryColor
                     FontWeight: =FontWeight.Semibold
                     Height: =60
                     HoverColor: =RGBA(255, 255, 255, 1)
@@ -434,7 +434,7 @@
                 icnQCRemoveItem_1 As icon.ChevronRight:
                     AccessibleLabel: =Self.Tooltip
                     BorderColor: =RGBA(32, 54, 71, 1)
-                    Color: =ColorValue(varBrandColor)
+                    Color: =varTheme.primaryColor
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(244, 244, 244, 1)
                     Height: =50
@@ -528,7 +528,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =If(Sum(colSelectedItems, quantity), DisplayMode.Edit, DisplayMode.Disabled)
-        Fill: =ColorValue(varBrandColor)
+        Fill: =varTheme.primaryColor
         FontWeight: =FontWeight.Semibold
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
