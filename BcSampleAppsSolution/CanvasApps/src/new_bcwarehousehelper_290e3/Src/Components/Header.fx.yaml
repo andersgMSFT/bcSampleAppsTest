@@ -12,6 +12,7 @@ Header As CanvasComponent:
     lblHeaderTitle As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
+        Font: =varTheme.font
         Height: =80
         Size: =21
         Text: =Header.titleInput   
@@ -68,6 +69,7 @@ Header As CanvasComponent:
         lblHeaderName As label:
             BorderColor: =RGBA(69, 186, 184, 1)
             Color: =RGBA(29, 29, 29, 1)
+            Font: =varTheme.font
             Height: =30
             Size: =16
             Text: ='Office365-brugere'.MyProfile().DisplayName
@@ -79,6 +81,7 @@ Header As CanvasComponent:
         lblHeaderMail As label:
             BorderColor: =RGBA(69, 186, 184, 1)
             Color: =RGBA(29, 29, 29, 1)
+            Font: =varTheme.font
             Height: =30
             Size: =16
             Text: ='Office365-brugere'.MyProfile().Mail

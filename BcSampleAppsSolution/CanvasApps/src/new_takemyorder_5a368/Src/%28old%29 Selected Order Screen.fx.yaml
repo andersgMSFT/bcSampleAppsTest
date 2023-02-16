@@ -7,6 +7,7 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =varTheme.font
         Height: =91
         Size: =40
         Text: ="Current order"
@@ -43,6 +44,7 @@
             FontWeight: =FontWeight.Semibold
             Height: =44
             OnSelect: =Select(Parent)
+            Font: =varTheme.font
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -59,6 +61,7 @@
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =Self.Size * 1.8
+            Font: =varTheme.font
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -140,6 +143,7 @@
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =70
             Size: =21
             Text: ="Number of items"
@@ -152,6 +156,7 @@
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =70
             Size: =21
             Text: ="Total Price"
@@ -166,6 +171,7 @@
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
+            Font: =varTheme.font
             Height: =70
             Size: =21
             Text: =Sum(colSelectedItems, quantity)
@@ -180,6 +186,7 @@
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
+            Font: =varTheme.font
             Height: =70
             Size: =21
             Text: =Sum(colSelectedItems, price * quantity)
@@ -219,6 +226,7 @@
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
+        Font: =varTheme.font
         Height: =65
         Size: =21
         Text: =varSelectedCustomer.displayName
