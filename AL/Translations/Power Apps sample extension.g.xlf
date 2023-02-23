@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Power Apps sample extension">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3905640047 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppLanguageResources - Field Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905640047 - Field 1859002777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LanguageCode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppLanguageResources - Field LanguageCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3905640047 - Field 1641636586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LocalValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppLanguageResources - Field LocalValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2987364182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customers with image</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CustomersWithImage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2987364182 - Control 1762530770 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CustomersWithImage - Control address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2987364182 - Control 460507951 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DisplayName</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CustomersWithImage - Control displayName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2987364182 - Control 2686962215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>System ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CustomersWithImage - Control id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2987364182 - Control 349749505 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CustomersWithImage - Control itemImageText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2987364182 - Control 3281272467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CustomersWithImage - Control mail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2987364182 - Control 2757394829 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CustomersWithImage - Control number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2987364182 - Control 2524668112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CustomersWithImage - Control phone - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2987364182 - Control 1463933576 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CustomersWithImage - Control picture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item with image</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 3043709377 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Base Unit Of Measure Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control baseUnitOfMeasureCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 460507951 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>DisplayName</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control displayName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 2686962215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>System ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 3429668174 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control inventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 953500447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control inventoryPostingGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 1024955636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Category Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control itemCategoryCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 349749505 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control itemImageText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 2757394829 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 1463933576 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control picture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2688614764 - Control 3421409717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ItemWithImage - Control unitPrice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3905640047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PowerApp Language Resources</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3905640047 - Control 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3905640047 - Control 1859002777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control LanguageCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3905640047 - Control 1641636586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Local Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control LocalValue - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

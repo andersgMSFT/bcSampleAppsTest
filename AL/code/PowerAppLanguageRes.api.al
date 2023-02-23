@@ -1,9 +1,9 @@
 page 50104 PowerAppLanguageResources
 {
     PageType = API;
-    Caption = 'Item with image';
-    EntityName = 'itemWithImage';
-    EntitySetName = 'itemsWithImage';
+    Caption = 'PowerApp Language Resources';
+    EntityName = 'PowerAppLanguageResource';
+    EntitySetName = 'PowerappLanguageResources';
     APIPublisher = 'microsoft';
     APIGroup = 'powerApps';
     APIVersion = 'beta';
