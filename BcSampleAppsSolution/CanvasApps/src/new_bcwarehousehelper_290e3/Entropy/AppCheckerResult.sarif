@@ -254,19 +254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Scan Page'.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "'Start Page'.Icon5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Scan Page'.Icon1.AccessibleLabel",
+                  "fullyQualifiedName": "'Start Page'.Icon5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Scan Page",
-                "type": "'Scan Page'.Icon1"
+                "module": "Start Page",
+                "type": "'Start Page'.Icon5"
               }
             }
           ],
@@ -284,19 +284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Scan Page'.Icon1.TabIndex"
+                  "fullyQualifiedName": "'Start Page'.Icon5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Scan Page'.Icon1.TabIndex",
+                  "fullyQualifiedName": "'Start Page'.Icon5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Scan Page",
-                "type": "'Scan Page'.Icon1"
+                "module": "Start Page",
+                "type": "'Start Page'.Icon5"
               }
             }
           ],
@@ -314,19 +314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Scan Page'.ComboBox1.AccessibleLabel"
+                  "fullyQualifiedName": "'Start Page'.Dropdown1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Scan Page'.ComboBox1.AccessibleLabel",
+                  "fullyQualifiedName": "'Start Page'.Dropdown1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Scan Page",
-                "type": "'Scan Page'.ComboBox1"
+                "module": "Start Page",
+                "type": "'Start Page'.Dropdown1"
               }
             }
           ],
@@ -344,19 +344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Warehouse Page'.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "'Test screen'.ComboBox1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Warehouse Page'.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "'Test screen'.ComboBox1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Warehouse Page",
-                "type": "'Warehouse Page'.Gallery1"
+                "module": "Test screen",
+                "type": "'Test screen'.ComboBox1"
               }
             }
           ],
@@ -374,19 +374,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Warehouse Page'.Gallery1.TabIndex"
+                  "fullyQualifiedName": "'Item Page'.Label2.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Warehouse Page'.Gallery1.TabIndex",
+                  "fullyQualifiedName": "'Item Page'.Label2.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Item Page",
+                "type": "'Item Page'.Label2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Item Page'.Label2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Item Page'.Label2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Warehouse Page",
-                "type": "'Warehouse Page'.Gallery1"
+                "module": "Item Page",
+                "type": "'Item Page'.Label2"
               }
             }
           ],
@@ -404,19 +434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon2_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Item Page'.Icon1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon2_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Item Page'.Icon1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Item Page",
-                "type": "'Item Page'.Canvas1.DataCard1.Icon2_1"
+                "type": "'Item Page'.Icon1"
               }
             }
           ],
@@ -434,19 +464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon2_1.TabIndex"
+                  "fullyQualifiedName": "'Item Page'.Icon1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon2_1.TabIndex",
+                  "fullyQualifiedName": "'Item Page'.Icon1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Item Page",
-                "type": "'Item Page'.Canvas1.DataCard1.Icon2_1"
+                "type": "'Item Page'.Icon1"
               }
             }
           ],
@@ -464,19 +494,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon2.AccessibleLabel"
+                  "fullyQualifiedName": "'Item Page'.Container1.TextInput1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon2.AccessibleLabel",
+                  "fullyQualifiedName": "'Item Page'.Container1.TextInput1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Item Page",
-                "type": "'Item Page'.Canvas1.DataCard1.Icon2"
+                "type": "'Item Page'.Container1.TextInput1"
               }
             }
           ],
@@ -494,19 +524,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon2.TabIndex"
+                  "fullyQualifiedName": "'Item Page'.Container1.Icon3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon2.TabIndex",
+                  "fullyQualifiedName": "'Item Page'.Container1.Icon3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Item Page",
+                "type": "'Item Page'.Container1.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Item Page'.Container1.Icon3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Item Page'.Container1.Icon3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Item Page",
-                "type": "'Item Page'.Canvas1.DataCard1.Icon2"
+                "type": "'Item Page'.Container1.Icon3"
               }
             }
           ],
@@ -524,19 +584,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "'Item Page'.Container1.Icon2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "'Item Page'.Container1.Icon2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Item Page",
-                "type": "'Item Page'.Canvas1.DataCard1.TextInput1"
+                "type": "'Item Page'.Container1.Icon2"
               }
             }
           ],
@@ -554,49 +614,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon5.AccessibleLabel"
+                  "fullyQualifiedName": "'Item Page'.Container1.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Item Page",
-                "type": "'Item Page'.Canvas1.DataCard1.Icon5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon5.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon5.TabIndex",
+                  "fullyQualifiedName": "'Item Page'.Container1.Icon2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Item Page",
-                "type": "'Item Page'.Canvas1.DataCard1.Icon5"
+                "type": "'Item Page'.Container1.Icon2"
               }
             }
           ],
@@ -614,19 +644,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon6.AccessibleLabel"
+                  "fullyQualifiedName": "'Info Screen'.Icon6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon6.AccessibleLabel",
+                  "fullyQualifiedName": "'Info Screen'.Icon6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Item Page",
-                "type": "'Item Page'.Canvas1.DataCard1.Icon6"
+                "module": "Info Screen",
+                "type": "'Info Screen'.Icon6"
               }
             }
           ],
@@ -644,19 +674,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon6.TabIndex"
+                  "fullyQualifiedName": "'Info Screen'.Icon6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Item Page'.Canvas1.DataCard1.Icon6.TabIndex",
+                  "fullyQualifiedName": "'Info Screen'.Icon6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Item Page",
-                "type": "'Item Page'.Canvas1.DataCard1.Icon6"
+                "module": "Info Screen",
+                "type": "'Info Screen'.Icon6"
               }
             }
           ],
@@ -668,6 +698,96 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Item updated screen'.Icon7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Item updated screen'.Icon7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Item updated screen",
+                "type": "'Item updated screen'.Icon7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Item updated screen'.Icon7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Item updated screen'.Icon7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Item updated screen",
+                "type": "'Item updated screen'.Icon7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.varSizes"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varSizes",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varSizes",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -697,7 +817,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -727,7 +847,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -757,7 +877,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -787,24 +907,24 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varLocations"
+                  "fullyQualifiedName": "App.varTemp"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varLocations",
+                  "fullyQualifiedName": "App.varTemp",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varLocations",
+                "member": "varTemp",
                 "module": "App",
                 "type": "App"
               }
@@ -817,37 +937,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.varItemReferences"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varItemReferences",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varItemReferences",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
+          "ruleIndex": 3
         }
       ],
       "tool": {
@@ -890,6 +980,23 @@
               }
             },
             {
+              "id": "acc-FocusBorderShouldBeVisible",
+              "messageStrings": {
+                "issue": {
+                  "text": "Focus isn't showing"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Change the FocusedBorderThickness property to be more than 0."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "If the focus isn't visible, people who don't use a mouse won't be able to see it when they're interacting with the app."
+              }
+            },
+            {
               "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
@@ -907,7 +1014,7 @@
               }
             }
           ],
-          "version": "1.326"
+          "version": "1.327"
         }
       }
     }

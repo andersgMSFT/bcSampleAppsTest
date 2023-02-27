@@ -1,0 +1,14 @@
+"'Item updated screen' As screen":
+    Fill: =varTheme.secondaryColor
+
+    Icon7 As icon.Check:
+        Color: =varTheme.brandColor
+        Height: =220
+        Icon: =Icon.Check
+        OnSelect: |-
+            =Navigate('Item Page', ScreenTransition.Fade, {ctxStartScan: true})
+        Width: =220
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =Parent.Height/2 - Self.Height/2
+        ZIndex: =1
+
