@@ -12,26 +12,10 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "PRODUCTION,a2db7307-078b-ed11-aad8-000d3a21edc2": {
+      "sandbox,a2db7307-078b-ed11-aad8-000d3a21edc2": {
         "dataSources": {
           "companyInformation (v2.0)": {
             "tableName": "companyInformation,v2.0"
-          }
-        }
-      },
-      "sandbox,a2db7307-078b-ed11-aad8-000d3a21edc2": {
-        "dataSources": {
-          "customersWithImage (microsoft/powerApps/beta)": {
-            "tableName": "customersWithImage,microsoft%252FpowerApps%252Fbeta"
-          },
-          "itemsWithImage (microsoft/powerApps/beta)": {
-            "tableName": "itemsWithImage,microsoft%252FpowerApps%252Fbeta"
-          },
-          "salesOrderLines (v2.0)": {
-            "tableName": "salesOrderLines,v2.0"
-          },
-          "salesOrders (v2.0)": {
-            "tableName": "salesOrders,v2.0"
           }
         }
       }
@@ -54,7 +38,7 @@
     "connectionRef": {
       "apiTier": "Standard",
       "displayName": "Office 365 Users",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1611/1.0.1611.3104/office365users/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1617/1.0.1617.3171/office365users/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_office365users",
       "parameterHints": {},
       "parameterHintsV2": {}

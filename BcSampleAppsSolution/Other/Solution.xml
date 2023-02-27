@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.23012.180" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.23014.182" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>BcSampleAppsSolution</UniqueName>
     <LocalizedNames>
       <LocalizedName description="BcSampleAppsSolution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.5.11</Version>
+    <Version>1.0.0.17</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>DefaultPublisherorgeb5c50b3</UniqueName>

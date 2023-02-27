@@ -1,2 +1,56 @@
 "'Test screen' As screen":
 
+    Button2 As button:
+        Height: =70
+        OnSelect: |
+            =Set(varTemp, Patch('items (v2.0)', {id: GUID()}, {inventory: 2 }));
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =186
+        Y: =1066
+        ZIndex: =1
+
+    Button2_1 As button:
+        Height: =70
+        OnSelect: |+
+            =IfError(
+                Patch('items (v2.0)', {id: GUID()}, {inventory: 2 });
+                Notify("Success");
+                ,  
+                Notify("fail " & FirstError.Message)
+            );
+            
+            
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =186
+        Y: =942
+        ZIndex: =2
+
+    ComboBox1 As combobox:
+        DisplayFields: =["displayName"]
+        Height: =56
+        IsSearchable: =false
+        Items: ='itemsWithImage (microsoft/powerApps/beta)'
+        OnChange: =Set(varScannedItem, LookUp('itemsWithImage (microsoft/powerApps/beta)', number = ComboBox1.Selected.number));
+        SearchFields: =["displayName"]
+        SearchItems: =[]
+        SelectMultiple: =false
+        Size: =21
+        Width: =360
+        X: =85
+        Y: =70
+        ZIndex: =4
+
+    Button4 As button:
+        Height: =70
+        OnSelect: =Navigate('Item Page')
+        Size: =24
+        Text: ="Go to Item"
+        Width: =280
+        X: =85
+        Y: =156
+        ZIndex: =5
+

@@ -6,7 +6,7 @@
     "connectionRef": {
       "apiTier": "Premium",
       "displayName": "Dynamics 365 Business Central",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/dynamicssmbsaas/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1617/1.0.1617.3171/dynamicssmbsaas/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas",
       "parameterHints": {},
       "parameterHintsV2": {}
@@ -14,8 +14,8 @@
     "datasets": {
       "sandbox,a2db7307-078b-ed11-aad8-000d3a21edc2": {
         "dataSources": {
-          "itemReferences (microsoft/powerApps/beta)": {
-            "tableName": "itemReferences,microsoft%252FpowerApps%252Fbeta"
+          "companyInformation (v2.0)": {
+            "tableName": "companyInformation,v2.0"
           },
           "items (v2.0)": {
             "tableName": "items,v2.0"
@@ -31,9 +31,9 @@
     },
     "dataSources": [
       "itemsWithImage (microsoft/powerApps/beta)",
-      "itemReferences (microsoft/powerApps/beta)",
       "locations (v2.0)",
-      "items (v2.0)"
+      "items (v2.0)",
+      "companyInformation (v2.0)"
     ],
     "dependencies": {},
     "dependents": [],
@@ -46,7 +46,7 @@
     "connectionRef": {
       "apiTier": "Standard",
       "displayName": "Office 365 Users",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1611/1.0.1611.3104/office365users/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1618/1.0.1618.3179/office365users/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_office365users",
       "parameterHints": {},
       "parameterHintsV2": {}

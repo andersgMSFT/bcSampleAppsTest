@@ -7,6 +7,7 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =varTheme.font
         Height: =91
         Size: =40
         Text: ="Current order"
@@ -40,6 +41,7 @@
         Title3 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             FontWeight: =FontWeight.Semibold
             Height: =44
             OnSelect: =Select(Parent)
@@ -58,6 +60,7 @@
         Subtitle3 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -140,6 +143,7 @@
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =70
             Size: =21
             Text: ="Number of items"
@@ -152,6 +156,7 @@
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =70
             Size: =21
             Text: ="Total Price"
@@ -165,6 +170,7 @@
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             FontWeight: =FontWeight.Semibold
             Height: =70
             Size: =21
@@ -179,6 +185,7 @@
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             FontWeight: =FontWeight.Semibold
             Height: =70
             Size: =21
@@ -218,6 +225,7 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =varTheme.font
         FontWeight: =FontWeight.Semibold
         Height: =65
         Size: =21

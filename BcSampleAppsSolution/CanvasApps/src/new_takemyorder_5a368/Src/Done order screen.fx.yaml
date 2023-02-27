@@ -7,6 +7,7 @@
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =varTheme.font
         Height: =91
         Size: =40
         Text: ="Current order"
@@ -28,6 +29,7 @@
         Title8 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             FontWeight: =FontWeight.Semibold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -46,6 +48,7 @@
         Subtitle8 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -63,6 +66,7 @@
         Body2 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =varTheme.font
             Height: =56
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -129,6 +133,7 @@
                 AutoHeight: =true
                 Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -170,6 +175,7 @@
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -189,6 +195,7 @@
                 Align: =Align.Center
                 Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 Height: =DataCardKey2.Height
                 Size: =21
                 Text: ="*"
@@ -218,6 +225,7 @@
                 AutoHeight: =true
                 Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -256,6 +264,7 @@
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -275,6 +284,7 @@
                 Align: =Align.Center
                 Color: =RGBA(32, 54, 71, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =varTheme.font
                 Height: =DataCardKey4.Height
                 Size: =21
                 Text: ="*"

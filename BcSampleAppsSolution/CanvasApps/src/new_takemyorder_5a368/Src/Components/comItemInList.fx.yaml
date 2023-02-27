@@ -35,6 +35,7 @@ comItemInList As CanvasComponent:
     lblItemDisplayName_2 As label:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =varTheme.font
         FontWeight: =FontWeight.Semibold
         OnSelect: =
         PaddingBottom: =0
@@ -52,6 +53,7 @@ comItemInList As CanvasComponent:
     lblItemPrice_2 As label:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =varTheme.font
         Height: =39
         OnSelect: =
         PaddingBottom: =0
