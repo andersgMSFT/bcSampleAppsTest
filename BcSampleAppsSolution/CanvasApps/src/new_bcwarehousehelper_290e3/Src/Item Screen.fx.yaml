@@ -1,32 +1,8 @@
-"'Item Page' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"'Item Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =varTheme.secondaryColor
-    OnVisible: |
+    OnVisible: |+
         =UpdateContext({ctxInventory: 0});
-        If(ctxStartScan, Select(BarcodeScannerSmall));
-        UpdateContext({ctxStartScan: false});
-
-    BarcodeScannerSmall As barcodeScanner:
-        BorderThickness: =0
-        Fill: =varTheme.brandColor
-        Font: ='Segoe UI'
-        Height: =220
-        HoverBorderColor: =Black
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(255, 255, 255, 1)
-        OnScan: |
-            =Set(varScannedItem, LookUp('itemsWithImage (microsoft/powerApps/beta)', number = BarcodeScannerSmall.Value ));
-            UpdateContext({ctxInventory: varScannedItem.inventory});
-        RadiusBottomLeft: =350
-        RadiusBottomRight: =350
-        RadiusTopLeft: =350
-        RadiusTopRight: =350
-        Size: =22
-        Text: ="Submit"
-        Visible: =false
-        Width: =220
-        X: =420
-        Y: =903
-        ZIndex: =5
+        
 
     Label2 As label:
         Align: =Align.Center
@@ -41,12 +17,17 @@
 
     Image1 As image:
         BorderColor: =RGBA(149, 149, 149, 1)
-        BorderThickness: =2
-        Height: =320
+        BorderThickness: =3
+        Height: =350
         Image: =varScannedItem.picture
-        Width: =320
+        ImagePosition: =ImagePosition.Fill
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =350
         X: =Parent.Width/2 - Self.Width/2
-        Y: =150
+        Y: =130
         ZIndex: =8
 
     Label3 As label:
@@ -111,6 +92,8 @@
             Default: =ctxInventory
             Format: =TextFormat.Number
             Height: =80
+            OnChange: |-
+                =UpdateContext({ctxInventory: Value(Self.Text)})
             PaddingLeft: =5
             Size: =26
             Width: =140
@@ -126,10 +109,13 @@
         Height: =220
         OnSelect: |-
             =IfError(
-                Patch('items (v2.0)', {id: varScannedItem.id}, {inventory: ctxInventory });
-                Navigate('Item updated screen');
-                ,
+                Patch('items (v2.0)', {id: varScannedItem.id}, {inventory: ctxInventory }),
+                Set(varErrorOnPatch, true);
                 Notify("Inventory update failed for " &varScannedItem.displayName & " " & FirstError.Message, NotificationType.Error)
+            );
+            
+            If(Not(varErrorOnPatch), 
+                Navigate('Item updated screen', ScreenTransition.Fade)
             )
         RadiusBottomLeft: =Self.Width / 2
         RadiusBottomRight: =Self.Width / 2
@@ -146,7 +132,7 @@
         Color: =varTheme.brandColor
         Height: =50
         Icon: =Icon.Cancel
-        OnSelect: =Select(BarcodeScannerSmall)
+        OnSelect: =Navigate('Scan screen', ScreenTransition.Fade)
         Width: =50
         X: =Parent.Width - Self.Width - 20
         Y: =40
