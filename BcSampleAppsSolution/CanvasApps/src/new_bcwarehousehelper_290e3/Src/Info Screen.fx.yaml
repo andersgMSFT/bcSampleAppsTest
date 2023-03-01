@@ -7,8 +7,8 @@
         Icon: =Icon.Cancel
         OnSelect: =Back(ScreenTransition.UnCoverRight)
         Width: =50
-        X: =550
-        Y: =40
+        X: =Parent.Width - Self.Width -20
+        Y: =20
         ZIndex: =2
 
     Label8 As label:
@@ -20,14 +20,14 @@
             Read more about Business Central sample apps here"
         Width: =474
         X: =Parent.Width/2 - Self.Width/2
-        Y: =450
+        Y: =Container2.Y + Container2.Height
         ZIndex: =3
 
     Container2 As groupContainer:
         Height: =70
         Width: =320
         X: =Label8.X
-        Y: =351
+        Y: =200
         ZIndex: =6
 
         Label4 As label:

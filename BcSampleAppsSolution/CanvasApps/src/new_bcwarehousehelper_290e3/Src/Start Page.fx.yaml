@@ -1,24 +1,23 @@
 "'Start Page' As screen":
     Fill: =varTheme.brandColor
     OnVisible: |+
-        =// Reset all scanned item attributes
-        Set(varItemInventoryNumber, Blank());
-        Set(varItemInventoryName, Blank());
-        Set(varItemUnitOfMeasure, Blank());
-        Set(varShowUserInfo, false);
-        
-        // Reload warehouses
+        =// Load warehouses
         Set(varWarehouses, 'locations (v2.0)');
         
         // Load app state from local storage
         Set(varAppStateKey, "BCWarehouseAppStateKey");
         Set(varAppStateAvailable, true);
+        
+        // Check if local storage is available
         IfError(LoadData(colStoredAppState, varAppStateKey), Set(varAppStateAvailable, false));
         If(varAppStateAvailable, Set(varAppState, First(colStoredAppState)),Set(varAppState, Blank()));
         
         // Parse app state
         If(Not(IsBlank(varAppState)), 
-            IfError(Set(varSelectedWarehouse, LookUp(varWarehouses, id = varAppState.warehouse)), Set(varSelectedWarehouse, Blank())         
+            IfError(
+                // See if local state warehouse is still available
+                Set(varSelectedWarehouse, LookUp(varWarehouses, id = varAppState.warehouse)), 
+                Set(varSelectedWarehouse, Blank())         
         ))
         
 
@@ -102,12 +101,7 @@
         DisabledFill: =RGBA(237, 237, 237, 1)
         Fill: =varTheme.secondaryColor
         Height: =220
-        OnSelect: |-
-            =Navigate(
-                'Item Page',
-                ScreenTransition.Fade,
-                {ctxStartScan: true}
-            )
+        OnSelect: =Navigate('Scan screen', ScreenTransition.Fade)
         RadiusBottomLeft: =Self.Width / 2
         RadiusBottomRight: =Self.Width / 2
         RadiusTopLeft: =Self.Width / 2
