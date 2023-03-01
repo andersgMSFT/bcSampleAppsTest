@@ -5,10 +5,17 @@
         Color: =varTheme.brandColor
         Height: =220
         Icon: =Icon.Check
-        OnSelect: |-
-            =Navigate('Item Screen', ScreenTransition.Fade, {ctxStartScan: true})
+        OnSelect: =
         Width: =220
         X: =Parent.Width/2 - Self.Width/2
         Y: =Parent.Height/2 - Self.Height/2
         ZIndex: =1
+
+    Rectangle1 As rectangle:
+        Fill: =Transparent
+        Height: =1136
+        OnSelect: |-
+            =Navigate('Item Screen', ScreenTransition.Fade, {ctxStartScan: true})
+        Width: =640
+        ZIndex: =2
 

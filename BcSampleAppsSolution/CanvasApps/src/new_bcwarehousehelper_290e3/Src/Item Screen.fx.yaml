@@ -1,7 +1,7 @@
 "'Item Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =varTheme.secondaryColor
     OnVisible: |+
-        =UpdateContext({ctxInventory: 0});
+        =UpdateContext({ctxInventory: 0, ctxAllowSubmit: false});
         
 
     Label2 As label:
@@ -68,8 +68,8 @@
         Icon2 As icon.Add:
             Height: =40
             Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({ctxInventory: ctxInventory + 1})
+            OnSelect: |
+                =UpdateContext({ctxInventory: ctxInventory + 1, ctxAllowSubmit: true});
             Width: =40
             X: =Parent.Width -20 - Self.Width
             Y: =20
@@ -79,7 +79,7 @@
             Height: =40
             Icon: =Icon.HorizontalLine
             OnSelect: |-
-                =UpdateContext({ctxInventory: ctxInventory - 1})
+                =UpdateContext({ctxInventory: ctxInventory - 1, ctxAllowSubmit: true})
             Width: =40
             X: =20
             Y: =20
@@ -92,8 +92,10 @@
             Default: =ctxInventory
             Format: =TextFormat.Number
             Height: =80
-            OnChange: |-
-                =UpdateContext({ctxInventory: Value(Self.Text)})
+            OnChange: |
+                =UpdateContext({ctxInventory: Value(Self.Text), ctxAllowSubmit: true});
+            OnSelect: |-
+                =UpdateContext({ctxAllowSubmit: true})
             PaddingLeft: =5
             Size: =26
             Width: =140
@@ -104,11 +106,13 @@
         BorderThickness: =0
         DisabledColor: =RGBA(255, 255, 255, 1)
         DisabledFill: =RGBA(237, 237, 237, 1)
-        DisplayMode: =If(ctxInventory = 0, DisplayMode.Disabled, DisplayMode.Edit)
+        DisplayMode: =If(ctxAllowSubmit, DisplayMode.Edit, DisplayMode.Disabled)
         Fill: =varTheme.brandColor
         Height: =220
-        OnSelect: |-
-            =IfError(
+        OnSelect: |
+            =UpdateContext({ctxAllowSubmit: false});
+            
+            IfError(
                 Patch('items (v2.0)', {id: varScannedItem.id}, {inventory: ctxInventory }),
                 Set(varErrorOnPatch, true);
                 Notify("Inventory update failed for " &varScannedItem.displayName & " " & FirstError.Message, NotificationType.Error)
@@ -116,7 +120,9 @@
             
             If(Not(varErrorOnPatch), 
                 Navigate('Item updated screen', ScreenTransition.Fade)
-            )
+            );
+            
+            UpdateContext({ctxAllowSubmit: true});
         RadiusBottomLeft: =Self.Width / 2
         RadiusBottomRight: =Self.Width / 2
         RadiusTopLeft: =Self.Width / 2
