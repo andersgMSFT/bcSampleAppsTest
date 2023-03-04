@@ -120,10 +120,11 @@
     "Start screen",
     "Info screen",
     "Select table screen",
-    "Order Screen",
-    "Current Order",
+    "Take Order Screen",
+    "Current Order Screen",
+    "Order submitted screen",
     "Item Details Screen",
-    "Order posted screen",
+    "Load Sales order screen",
     "test screen"
   ]
 }

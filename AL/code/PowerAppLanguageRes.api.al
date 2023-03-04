@@ -8,7 +8,7 @@ page 50104 PowerAppLanguageResources
     APIGroup = 'powerApps';
     APIVersion = 'beta';
 
-    SourceTable = PowerAppLanguageResources;
+    SourceTable = PowerAppsLanguageResources;
     DelayedInsert = true;
     ODataKeyFields = SystemId;
 
@@ -32,6 +32,11 @@ page 50104 PowerAppLanguageResources
                 {
                     ApplicationArea = All;
                     Caption = 'Local Value';
+                }
+                field(ResourceKey; Rec.ResourceKey)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Resource Key';
                 }
             }
         }

@@ -18,6 +18,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppLanguageResources - Field LocalValue - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4288511002 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppsLanguageResources - Field Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4288511002 - Field 1859002777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LanguageCode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppsLanguageResources - Field LanguageCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4288511002 - Field 1641636586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>LocalValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppsLanguageResources - Field LocalValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4288511002 - Field 2036771415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ResourceKey</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppsLanguageResources - Field ResourceKey - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2987364182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customers with image</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -137,6 +157,11 @@
           <source>Local Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control LocalValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3905640047 - Control 2036771415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resource Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control ResourceKey - Property Caption</note>
         </trans-unit>
       </group>
     </body>

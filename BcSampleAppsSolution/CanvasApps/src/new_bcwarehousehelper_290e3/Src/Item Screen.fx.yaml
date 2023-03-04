@@ -7,7 +7,6 @@
     Label2 As label:
         Align: =Align.Center
         Height: =50
-        OnSelect: =Navigate('Start Page');
         Size: =21
         Text: =varSelectedWarehouse.displayName
         Width: =377
@@ -34,7 +33,7 @@
         Align: =Align.Center
         Height: =70
         Size: =21
-        Text: =varScannedItem.displayName
+        Text: =varScannedItem.number & " " & varScannedItem.displayName
         Width: =454
         X: =Parent.Width/2 - Self.Width/2
         Y: =Image1.Y + Image1.Height + 20
@@ -148,7 +147,7 @@
         Align: =Align.Center
         Height: =50
         Size: =21
-        Text: =varScannedItem.number
+        Text: =varScannedItem.baseUnitOfMeasureCode
         Width: =400
         X: =Parent.Width/2 - Self.Width/2
         Y: =Label3.Y + Label3.Height + 10

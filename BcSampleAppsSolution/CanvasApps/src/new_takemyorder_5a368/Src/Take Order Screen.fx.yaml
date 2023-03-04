@@ -1,6 +1,6 @@
-"'Order Screen' As screen":
+"'Take Order Screen' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
-    OnVisible: |
+    OnVisible: |-
         =UpdateContext({ctxShowQuantityControlForIs: Blank(), ctxSelectedItemGroup: Blank()});
 
     conButtom As groupContainer.manualLayoutContainer:
@@ -411,7 +411,7 @@
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnSelect: |-
             =UpdateContext({ctxShowQuantityControlForIs: Blank()});
-            Navigate('Current Order', ScreenTransition.Cover);
+            Navigate('Current Order Screen', ScreenTransition.Cover);
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30

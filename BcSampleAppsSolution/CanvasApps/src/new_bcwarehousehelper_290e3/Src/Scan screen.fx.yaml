@@ -17,7 +17,7 @@
         HoverBorderColor: =Black
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
-        OnCancel: =Back()
+        OnCancel: =Navigate('Start Page', ScreenTransition.Fade);
         OnScan: |-
             =Set(varScannedItem, LookUp('itemsWithImage (microsoft/powerApps/beta)', number = Self.Value ));
             Navigate('Item Screen', ScreenTransition.Fade);

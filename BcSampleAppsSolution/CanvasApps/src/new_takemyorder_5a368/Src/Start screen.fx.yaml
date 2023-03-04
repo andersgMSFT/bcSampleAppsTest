@@ -2,7 +2,11 @@
     Fill: =varTheme.primaryColor
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
-        =UpdateContext({ctxLoading: true });
+        =// Clear local collections
+        Clear(colSelectedItems);
+        
+        // Initial data load
+        UpdateContext({ctxLoading: true });
         
         ClearCollect(colItemGroup,{Result:"Full menu"});
         Concurrent(

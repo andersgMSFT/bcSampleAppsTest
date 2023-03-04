@@ -14,8 +14,17 @@
     Rectangle1 As rectangle:
         Fill: =Transparent
         Height: =1136
-        OnSelect: |-
-            =Navigate('Item Screen', ScreenTransition.Fade, {ctxStartScan: true})
+        OnSelect: =Navigate('Scan screen', ScreenTransition.Fade)
         Width: =640
         ZIndex: =2
+
+    Timer1 As timer:
+        AutoStart: =true
+        Duration: =3000
+        Height: =70
+        OnTimerEnd: =Navigate('Scan screen', ScreenTransition.Fade)
+        Start: =true
+        Visible: =false
+        Width: =280
+        ZIndex: =4
 

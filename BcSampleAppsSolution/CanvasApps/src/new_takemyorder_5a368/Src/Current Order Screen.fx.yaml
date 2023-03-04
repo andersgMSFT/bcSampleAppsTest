@@ -1,7 +1,9 @@
-"'Current Order' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"'Current Order Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |+
-        =Clear(colCurrentOrder);
+        =// Map selected items into groups for current order
+        // NOTE: colCurrentOrder is use to determine which items show up in the gallery, but colSelectedItems determine the quantity shown
+        Clear(colCurrentOrder);
         UpdateContext({ctxAllGroupsForCurrentOrder: Distinct(colSelectedItems, group)});
         
         ForAll(ctxAllGroupsForCurrentOrder,
@@ -10,6 +12,7 @@
             // All all items for group
             Collect(colCurrentOrder, Filter(colSelectedItems, And(group = Result, quantity > 0)))
         );
+        
         
 
     conButtom_1 As groupContainer.manualLayoutContainer:
@@ -498,7 +501,7 @@
             );
             
             ClearCollect(colSelectedItems, Blank());
-            Navigate('Order posted screen', ScreenTransition.Fade);
+            Navigate('Order submitted screen', ScreenTransition.Fade);
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
@@ -555,7 +558,8 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =50
             Icon: =Icon.ChevronLeft
-            OnSelect: =Back()
+            OnSelect: |-
+                =Navigate('Take Order Screen', ScreenTransition.UnCover ,{ctxShouldLoadActiveOrder: false});
             Width: =50
             X: =30
             Y: =30

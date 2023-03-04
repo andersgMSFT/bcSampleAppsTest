@@ -1,24 +1,13 @@
 "'Test web scan screen' As screen":
     Fill: =varTheme.secondaryColor
 
-    Button4_1 As button:
-        Color: =White
-        Fill: =varTheme.brandColor
-        Height: =70
-        OnSelect: |-
-            =Set(varScannedItem, Gallery1.Selected);
-            Navigate('Item Screen')
-        Size: =24
-        Text: ="Go to Item"
-        Width: =280
-        X: =180
-        Y: =230
-        ZIndex: =2
-
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =813
         Items: ='itemsWithImage (microsoft/powerApps/beta)'
         Layout: =Layout.Vertical
+        OnSelect: |-
+            =Set(varScannedItem, ThisItem);
+            Navigate('Item Screen')
         TemplatePadding: =0
         TemplateSize: =160
         Y: =320
@@ -94,4 +83,13 @@
         X: =40
         Y: =40
         ZIndex: =4
+
+    Checkbox1 As checkbox:
+        Height: =85
+        Size: =21
+        Text: ="Stop auto scan"
+        Width: =410
+        X: =26
+        Y: =192
+        ZIndex: =5
 

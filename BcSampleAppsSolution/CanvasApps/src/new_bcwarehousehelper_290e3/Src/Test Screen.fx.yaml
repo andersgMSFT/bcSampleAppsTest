@@ -1,11 +1,2 @@
 "'Test Screen' As screen":
 
-    Checkbox1 As checkbox:
-        Height: =85
-        Size: =21
-        Text: ="Stop auto scan"
-        Width: =410
-        X: =115
-        Y: =70
-        ZIndex: =1
-

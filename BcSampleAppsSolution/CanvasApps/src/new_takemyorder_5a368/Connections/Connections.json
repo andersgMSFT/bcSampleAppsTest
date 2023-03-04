@@ -19,16 +19,19 @@
           },
           "customers (v2.0)": {
             "tableName": "customers,v2.0"
+          },
+          "salesOrderLines (v2.0)": {
+            "tableName": "salesOrderLines,v2.0"
           }
         }
       }
     },
     "dataSources": [
       "salesOrders (v2.0)",
-      "salesOrderLines (v2.0)",
       "itemsWithImage (microsoft/powerApps/beta)",
       "companyInformation (v2.0)",
-      "customers (v2.0)"
+      "customers (v2.0)",
+      "salesOrderLines (v2.0)"
     ],
     "dependencies": {},
     "dependents": [],
