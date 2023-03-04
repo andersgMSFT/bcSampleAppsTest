@@ -19,7 +19,7 @@
       "Name": "Language",
       "PropertyDataTypeKey": "String",
       "Tooltip": "The selected language",
-      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.328\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -28,7 +28,7 @@
       "Name": "Labels",
       "PropertyDataTypeKey": "Record",
       "Tooltip": "Translated label",
-      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"scanScreen_header\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"scanscreen_body\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"warehouseScreen_body\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"warehouseScreen_header\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+      "Type": "{\"Version\":\"1.328\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"scanScreen_header\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"scanscreen_body\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"warehouseScreen_body\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"warehouseScreen_header\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
     }
   ],
   "FirstParty": true,
@@ -39,7 +39,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638103442652296385",
+  "LastModifiedTimestamp": "638132702361798144",
   "Name": "78aad8aec73243dfa573a57ac5b247ee",
   "OverridableProperties": {},
   "Version": "638103291547227408"

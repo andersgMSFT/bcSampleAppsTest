@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas",
     "CdpRevision": {
       "BaseUrl": "/v3",
-      "LastChangedTimeString": "2023-01-04T18:18:52.8830000Z",
+      "LastChangedTimeString": "2023-02-02T19:16:15.4140000Z",
       "RevisionNumber": 3
     },
     "ConnectedDataSourceInfoNameMapping": {

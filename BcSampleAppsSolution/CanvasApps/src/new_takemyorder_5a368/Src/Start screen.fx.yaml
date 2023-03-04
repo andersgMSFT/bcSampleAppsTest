@@ -2,14 +2,18 @@
     Fill: =varTheme.primaryColor
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
-        =UpdateContext({ctxLoading: true });
+        =// Clear local collections
+        Clear(colSelectedItems);
+        
+        // Initial data load
+        UpdateContext({ctxLoading: true });
         
         ClearCollect(colItemGroup,{Result:"Full menu"});
         Concurrent(
             Set(varUserName,Office365Users.MyProfile().DisplayName),
             Set(varCompanyName,First('companyInformation (v2.0)').displayName),
             Set(varWarmUpItems,'itemsWithImage (microsoft/powerApps/beta)'),
-            Set(varTableName,Filter('customersWithImage (microsoft/powerApps/beta)',"Table" in displayName)),
+            Set(varTableName,Filter('customers (v2.0)',"Table" in displayName)),
             Collect(colItemGroup,Distinct('itemsWithImage (microsoft/powerApps/beta)',inventoryPostingGroup))
         );
         UpdateContext({ctxLoading: false });
@@ -118,15 +122,28 @@
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Navigate('Order Screen');
+        OnSelect: =Navigate('Select table screen');
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
         Size: =varTheme.textSizeMedium
-        Text: ="Start"
+        Text: ="Take Orders"
         Width: =280
         X: =(Parent.Width / 2) - (btnStart.Width / 2)
         Y: =Parent.Height - 120
         ZIndex: =5
+
+    Icon5_3 As icon.Help:
+        BorderColor: =RGBA(149, 149, 149, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Help
+        OnSelect: =Navigate('Info screen', ScreenTransition.Cover)
+        Width: =50
+        X: =Parent.Width - Self.Width - 30
+        Y: =30
+        ZIndex: =6
 

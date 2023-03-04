@@ -27,47 +27,47 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "datepicker": {
+  "checkbox": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/datepicker",
+    "Id": "http://microsoft.com/appmagic/checkbox",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "datepicker",
+    "Name": "checkbox",
     "OverridableProperties": {},
-    "Version": "2.6.0"
+    "Version": "2.1.0"
   },
-  "dropdown": {
+  "dataTable": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/dropdown",
+    "Id": "http://microsoft.com/appmagic/dataTable",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
+    "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "dropdown",
+    "Name": "dataTable",
     "OverridableProperties": {},
-    "Version": "2.3.1"
+    "Version": "1.0.2"
   },
-  "form": {
+  "dataTableColumn": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/form",
+    "Id": "http://microsoft.com/appmagic/dataTableColumn",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
+    "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "form",
+    "Name": "dataTableColumn",
     "OverridableProperties": {},
-    "Version": "2.3.2"
+    "Version": "1.0.1"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -195,32 +195,18 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
-  "text": {
+  "timer": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/text",
+    "Id": "http://microsoft.com/appmagic/timer",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "text",
+    "Name": "timer",
     "OverridableProperties": {},
-    "Version": "2.3.2"
-  },
-  "typedDataCard": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/card",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "typedDataCard",
-    "OverridableProperties": {},
-    "Version": "1.0.5"
+    "Version": "2.1.0"
   }
 }

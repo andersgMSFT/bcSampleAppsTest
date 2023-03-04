@@ -1,0 +1,77 @@
+"'Load Sales order screen' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |
+        =// Clear collections
+        Clear(colSelectedItems);
+        Clear(colTempCachedItems);
+        Clear(colTempSalesOrderLines);
+        
+        // Load lines for active table order
+        Collect(colTempSalesOrderLines, Filter('salesOrderLines (v2.0)', documentId = varActiveorderForSelectedTable.id));
+        
+        // Store relevant items in local collection to avoid API call for each look up 
+        ForAll(colTempSalesOrderLines,
+            Collect(colTempCachedItems, LookUp('itemsWithImage (microsoft/powerApps/beta)', id = itemId))
+        );
+        
+        // Map sales order lines to "selected items"
+        ForAll(colTempSalesOrderLines, 
+            Collect(colSelectedItems, {
+                id: LookUp(colTempCachedItems, id = itemId).id,
+                name: LookUp(colTempCachedItems, id = itemId).displayName,
+                price: LookUp(colTempCachedItems, id = itemId).unitPrice,
+                group: LookUp(colTempCachedItems, id = itemId).inventoryPostingGroup,
+                quantity: LookUp(colTempCachedItems, id = itemId).inventory,
+                // Use placeholder image if the image is not provided
+                image: If(
+                    LookUp(colTempCachedItems, id = itemId).itemImageText = GUID("00000000-0000-0000-0000-000000000000"),
+                    placeholder,
+                    LookUp(colTempCachedItems, id = itemId).picture
+                )            
+            })
+        );
+        
+        // Navigate to Current order screen
+        If(
+            Not(varStopLoad),
+            Select(Button2)
+        );
+
+    Label7_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =varTheme.font
+        Height: =70
+        Size: =34
+        Text: ="Loading ..."
+        Width: =Parent.Width
+        Y: =Parent.Height/2 - Self.Height/2
+        ZIndex: =1
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Navigate('Current Order Screen', Fade)
+        Size: =24
+        Text: =""
+        Visible: =false
+        Width: =640
+        Y: =1066
+        ZIndex: =2
+
+    Rectangle6 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =Transparent
+        Height: =1136
+        OnSelect: =Select(Button2);
+        Width: =640
+        ZIndex: =3
+

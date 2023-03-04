@@ -1,0 +1,95 @@
+"'Test web scan screen' As screen":
+    Fill: =varTheme.secondaryColor
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =813
+        Items: ='itemsWithImage (microsoft/powerApps/beta)'
+        Layout: =Layout.Vertical
+        OnSelect: |-
+            =Set(varScannedItem, ThisItem);
+            Navigate('Item Screen')
+        TemplatePadding: =0
+        TemplateSize: =160
+        Y: =320
+        ZIndex: =3
+
+        Button6 As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =If(ThisItem.IsSelected, varTheme.brandColor, ColorFade(varTheme.brandColor, 40%))
+            Height: =150
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =24
+            Text: =""
+            Width: =590
+            X: =25
+            Y: =5
+            ZIndex: =1
+
+        Image2 As image:
+            BorderColor: =RGBA(116, 116, 116, 1)
+            BorderThickness: =2
+            Height: =136
+            Image: =ThisItem.picture
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =159
+            X: =81
+            Y: =12
+            ZIndex: =2
+
+        Title1 As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.number
+            VerticalAlign: =VerticalAlign.Top
+            Width: =273
+            X: =302
+            Y: =20
+            ZIndex: =3
+
+        Subtitle1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.displayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =302
+            Y: =72
+            ZIndex: =4
+
+    Label5 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =152
+        Size: =21
+        Text: ="This is just a test screen - will only be shown in web where scanner is not available"
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =4
+
+    Checkbox1 As checkbox:
+        Height: =85
+        Size: =21
+        Text: ="Stop auto scan"
+        Width: =410
+        X: =26
+        Y: =192
+        ZIndex: =5
+
