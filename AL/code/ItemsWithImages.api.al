@@ -59,6 +59,10 @@ page 50101 ItemWithImage
                 {
                     Caption = 'Picture reference';
                 }
+                field(GTIN; Rec.GTIN)
+                {
+                    Caption = 'GTIN';
+                }
             }
         }
     }

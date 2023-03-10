@@ -8,37 +8,46 @@ page 50104 PowerAppLanguageResources
     APIGroup = 'powerApps';
     APIVersion = 'beta';
 
-    SourceTable = PowerAppsLanguageResources;
-    DelayedInsert = true;
-    ODataKeyFields = SystemId;
+    InsertAllowed = false;
+    ModifyAllowed = false;
+    SourceTable = "Power Apps Labels";
+    SourceTableTemporary = true;
+    Extensible = false;
+    ODataKeyFields = "Label ID";
 
     layout
     {
-        area(Content)
+        area(content)
         {
-            repeater(GroupName)
+            repeater(Group)
             {
-                field(Id; Rec.Id)
+                field(labelId; Rec."Label ID")
                 {
-                    ApplicationArea = All;
-                    Caption = 'Id';
+                    Caption = 'Label Id';
                 }
-                field(LanguageCode; Rec.LanguageCode)
+                field(displayName; Rec."Text Value")
                 {
-                    ApplicationArea = All;
+                    Caption = 'Text Value';
+                }
+                field(languageCode; Rec."Language Code")
+                {
                     Caption = 'Language Code';
-                }
-                field(LocalValue; Rec.LocalValue)
-                {
-                    ApplicationArea = All;
-                    Caption = 'Local Value';
-                }
-                field(ResourceKey; Rec.ResourceKey)
-                {
-                    ApplicationArea = All;
-                    Caption = 'Resource Key';
                 }
             }
         }
     }
+
+    actions
+    {
+    }
+
+    trigger OnOpenPage()
+    var
+        PowerAppsLabelMgt: Codeunit "Power Apps Label Management";
+        LanguageFilter: Text;
+    begin
+        LanguageFilter := Rec.GetFilter("Language Code");
+
+        PowerAppsLabelMgt.GetLabelsForUserLanguage(Rec, UserSecurityId());
+    end;
 }

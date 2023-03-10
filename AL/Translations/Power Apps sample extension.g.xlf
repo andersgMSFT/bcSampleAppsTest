@@ -3,40 +3,35 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Power Apps sample extension">
     <body>
       <group id="body">
-        <trans-unit id="Table 3905640047 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Id</source>
+        <trans-unit id="Table 53503164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Power Apps labels</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppLanguageResources - Field Id - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Power Apps labels - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3905640047 - Field 1859002777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>LanguageCode</source>
+        <trans-unit id="Table 53503164 - Field 655570925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label ID</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppLanguageResources - Field LanguageCode - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Power Apps labels - Field Label ID - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3905640047 - Field 1641636586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>LocalValue</source>
+        <trans-unit id="Table 53503164 - Field 2273653569 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppLanguageResources - Field LocalValue - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Power Apps labels - Field Language Code - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4288511002 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Id</source>
+        <trans-unit id="Table 53503164 - Field 1942728498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppsLanguageResources - Field Id - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Power Apps labels - Field Text Value - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4288511002 - Field 1859002777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>LanguageCode</source>
+        <trans-unit id="Codeunit 214629044 - NamedType 2157219722" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is a description placeholder text.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppsLanguageResources - Field LanguageCode - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Power Apps label management - NamedType StartPage_DeScription_ValueTxt</note>
         </trans-unit>
-        <trans-unit id="Table 4288511002 - Field 1641636586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>LocalValue</source>
+        <trans-unit id="Codeunit 214629044 - NamedType 2336243950" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Welcome to the Power App sample app!</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppsLanguageResources - Field LocalValue - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4288511002 - Field 2036771415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>ResourceKey</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table PowerAppsLanguageResources - Field ResourceKey - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Power Apps label management - NamedType StartPage_Welcome_ValueTxt</note>
         </trans-unit>
         <trans-unit id="Page 2987364182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customers with image</source>
@@ -143,25 +138,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3905640047 - Control 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Id</source>
+        <trans-unit id="Page 3905640047 - Control 460507951 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text Value</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control Id - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control displayName - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3905640047 - Control 1859002777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3905640047 - Control 1655319621 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Label Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control labelId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3905640047 - Control 1794991033 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Language Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control LanguageCode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3905640047 - Control 1641636586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Local Value</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control LocalValue - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3905640047 - Control 2036771415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Resource Key</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control ResourceKey - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page PowerAppLanguageResources - Control languageCode - Property Caption</note>
         </trans-unit>
       </group>
     </body>
