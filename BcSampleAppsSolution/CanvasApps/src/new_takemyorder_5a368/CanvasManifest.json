@@ -1,7 +1,7 @@
 {
   "FormatVersion": "0.24",
   "Header": {
-    "DocVersion": "1.328",
+    "DocVersion": "1.329",
     "MinVersionToLoad": "1.327",
     "MSAppStructureVersion": "2.0"
   },
@@ -31,6 +31,7 @@
       "enableactionenhancedcomponentproperties": false,
       "enableappembeddingux": false,
       "enablebarcodereaderfeature": false,
+      "enablechatbotfeature": false,
       "enablecomponentnamemaps": false,
       "enablecomponentscopeoldbehavior": false,
       "enableeditcacherefreshfrequency": false,
@@ -117,14 +118,15 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "Loading screen",
     "Start screen",
     "Info screen",
     "Select table screen",
-    "Take Order Screen",
+    "Select Items Screen",
+    "Load Order screen",
     "Current Order Screen",
     "Order submitted screen",
     "Item Details Screen",
-    "Load Sales order screen",
     "test screen"
   ]
 }

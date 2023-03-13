@@ -3,7 +3,7 @@
     "IsComponentScoped": false,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "colCollapsedGroups",
+    "Name": "colCurrentOrderState_CollapsedGroups",
     "Type": "CollectionDataSourceInfo"
   }
 ]
