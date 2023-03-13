@@ -29,7 +29,7 @@ App As appinfo:
                 //Layout
                 smallSpace: Round(15 * varCurrenScreenRatio, 0),
                 bigSpace: Round(20 * varCurrenScreenRatio, 0),
-                rowHeight: Round(120 * varCurrenScreenRatio, 0),
+                rowHeight: Round(140 * varCurrenScreenRatio, 0),
                 topArea: Round(136 * varCurrenScreenRatio, 0),
                 bottomArea: Round(88 * varCurrenScreenRatio, 0)
             }

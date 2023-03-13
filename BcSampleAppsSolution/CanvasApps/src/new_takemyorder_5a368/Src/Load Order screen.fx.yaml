@@ -1,4 +1,4 @@
-"'Load Sales order screen' As screen":
+"'Load Order screen' As screen":
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |
         =// Clear collections
@@ -21,7 +21,7 @@
                 name: LookUp(colTempCachedItems, id = itemId).displayName,
                 price: LookUp(colTempCachedItems, id = itemId).unitPrice,
                 group: LookUp(colTempCachedItems, id = itemId).inventoryPostingGroup,
-                quantity: LookUp(colTempCachedItems, id = itemId).inventory,
+                quantity: quantity,
                 // Use placeholder image if the image is not provided
                 image: If(
                     LookUp(colTempCachedItems, id = itemId).itemImageText = GUID("00000000-0000-0000-0000-000000000000"),
@@ -33,7 +33,7 @@
         
         // Navigate to Current order screen
         If(
-            Not(varStopLoad),
+            Not(varStopAutoLoad),
             Select(Button2)
         );
 
@@ -43,10 +43,11 @@
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =varTheme.font
-        Height: =70
+        Height: =140
         Size: =34
-        Text: ="Loading ..."
-        Width: =Parent.Width
+        Text: ="Loading order for table..."
+        Width: =400
+        X: =Parent.Width/2 - Self.Width/2
         Y: =Parent.Height/2 - Self.Height/2
         ZIndex: =1
 
@@ -59,7 +60,7 @@
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Navigate('Current Order Screen', Fade)
+        OnSelect: =Navigate('Current Order Screen', ScreenTransition.Fade)
         Size: =24
         Text: =""
         Visible: =false
@@ -69,7 +70,7 @@
 
     Rectangle6 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
-        Fill: =Transparent
+        Fill: =Color.Transparent
         Height: =1136
         OnSelect: =Select(Button2);
         Width: =640

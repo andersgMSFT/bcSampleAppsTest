@@ -27,47 +27,19 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "checkbox": {
+  "circle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/checkbox",
+    "Id": "http://microsoft.com/appmagic/shapes/circle",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": false,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "checkbox",
+    "Name": "circle",
     "OverridableProperties": {},
-    "Version": "2.1.0"
-  },
-  "dataTable": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/dataTable",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "dataTable",
-    "OverridableProperties": {},
-    "Version": "1.0.2"
-  },
-  "dataTableColumn": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/dataTableColumn",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "dataTableColumn",
-    "OverridableProperties": {},
-    "Version": "1.0.1"
+    "Version": "2.3.0"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -206,6 +178,20 @@
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
     "Name": "timer",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
+  },
+  "toggleSwitch": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/toggleSwitch",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "toggleSwitch",
     "OverridableProperties": {},
     "Version": "2.1.0"
   }
