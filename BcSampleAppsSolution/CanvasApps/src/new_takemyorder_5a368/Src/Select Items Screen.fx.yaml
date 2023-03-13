@@ -53,11 +53,12 @@
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =36
+            Height: =39
             Size: =21
-            Text: ="$"&Sum(colSelectedItems, price * quantity)
-            X: =Parent.Width - 180 
-            Y: =60
+            Text: =Text(Sum(colSelectedItems, price * quantity), varCurrencyFormat)
+            Width: =196
+            X: =413
+            Y: =57
             ZIndex: =4
 
     conMid As groupContainer.manualLayoutContainer:
@@ -142,7 +143,7 @@
                 PaddingTop: =0
                 Size: =18
                 Text: |
-                    =Text(ThisItem.unitPrice, "$#,##0.00")
+                    =Text(ThisItem.unitPrice, varCurrencyFormat)
                 VerticalAlign: =VerticalAlign.Top
                 Width: =296
                 X: =124
