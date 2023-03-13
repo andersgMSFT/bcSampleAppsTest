@@ -37,20 +37,6 @@
             Select(Button2)
         );
 
-    Label7_1 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =varTheme.font
-        Height: =140
-        Size: =34
-        Text: ="Loading order for table..."
-        Width: =400
-        X: =Parent.Width/2 - Self.Width/2
-        Y: =Parent.Height/2 - Self.Height/2
-        ZIndex: =1
-
     Button2 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -68,11 +54,6 @@
         Y: =1066
         ZIndex: =2
 
-    Rectangle6 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Fill: =Color.Transparent
-        Height: =1136
-        OnSelect: =Select(Button2);
-        Width: =640
+    comLoadingOverlay_1 As comLoadingOverlay:
         ZIndex: =3
 

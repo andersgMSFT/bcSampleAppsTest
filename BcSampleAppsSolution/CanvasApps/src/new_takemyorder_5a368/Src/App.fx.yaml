@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |+
+    OnStart: |
         =Set(
             varDefaultScreenHeight,
             812
@@ -34,5 +34,5 @@ App As appinfo:
                 bottomArea: Round(88 * varCurrenScreenRatio, 0)
             }
         );
-        
+        Set(varCurrencyFormat, "$#,##0.00");
 
