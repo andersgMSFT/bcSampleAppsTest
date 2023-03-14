@@ -4,7 +4,7 @@
       "shared_dynamicssmbsaas": {
         "runtimeSource": "invoker",
         "connection": {
-          "connectionReferenceLogicalName": "new_shareddynamicssmbsaas_1903e"
+          "connectionReferenceLogicalName": "new_bc"
         },
         "api": {
           "name": "shared_dynamicssmbsaas"
