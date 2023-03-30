@@ -10,7 +10,7 @@ on:
       solutionName:
         type: text
         description: The name of the solution
-        default: BcSampleAppsSolution
+        default: TestSolutionConRef
       createBranch: 
         type: boolean
         description: Create a new branch and PR
