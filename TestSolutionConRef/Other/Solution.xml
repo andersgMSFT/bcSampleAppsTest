@@ -133,11 +133,6 @@
       <RootComponent type="29" id="{06ee3a0f-d5ce-ed11-b597-000d3a991110}" behavior="0" />
       <RootComponent type="300" schemaName="cr301_testappforconnection_8f19d" behavior="0" />
     </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required type="connectionreference" displayName="new_shareddynamicssmbsaas_1903e" solution="Active" id.connectionreferencelogicalname="new_shareddynamicssmbsaas_1903e" />
-        <Dependent type="29" displayName="Connection Ref test" id="{06ee3a0f-d5ce-ed11-b597-000d3a991110}" />
-      </MissingDependency>
-    </MissingDependencies>
+    <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>

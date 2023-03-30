@@ -56,6 +56,7 @@ Screen1 As screen:
 
     Button1 As button:
         Height: =300
+        OnSelect: =Set(varTest, 'Flow(connectiontest)'.Run("test"));
         RadiusBottomLeft: =1000
         RadiusBottomRight: =1000
         RadiusTopLeft: =1000

@@ -14,9 +14,10 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/30/2023 08:32:27",
+  "HeaderLastSavedDateTimeUTC": "03/30/2023 08:58:40",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
+    "60ae4b46-3bbb-44e3-b35b-c6103eafa4f9": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/BD6B8A3CDD265CF533ADF2D524297BCC-5E1F21561F5613C9\"",
     "c3ac1b58-3e77-4cfc-9e49-dcb664448cda": "\"/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas/connections/shared-dynamicssmbsa-18332827-61e5-4e26-8a3b-6bb09e15d956\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
@@ -25,8 +26,9 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "customers (v2.0)": 1,
-    "CustomGallerySample": 0
+    "customers (v2.0)": 2,
+    "CustomGallerySample": 1,
+    "Flow(connectiontest)": 0
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},

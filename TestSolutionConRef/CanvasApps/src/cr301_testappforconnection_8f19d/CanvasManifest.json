@@ -101,11 +101,11 @@
     "Id": "728fc4d0-31b7-4c1c-85e0-d953853dbe3e",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "TestAppForConnection",
+    "Name": "PowerApp(ConnectionTest)",
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
-    "AppName": "TestAppForConnection",
+    "AppName": "PowerApp(ConnectionTest)",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
