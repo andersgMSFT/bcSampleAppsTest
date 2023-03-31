@@ -131,6 +131,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="29" id="{2816f4bc-91cf-ed11-b597-000d3a1b9188}" behavior="0" />
+      <RootComponent type="300" schemaName="cr301_test_e92b3" behavior="0" />
     </RootComponents>
     <MissingDependencies />
   </SolutionManifest>
