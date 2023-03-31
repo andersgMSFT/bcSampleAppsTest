@@ -6,3 +6,10 @@ Screen1 As screen:
         Y: =388
         ZIndex: =1
 
+    Button1 As button:
+        OnSelect: =FlowWithNoRef.Run();
+        Text: ="Button"
+        X: =507
+        Y: =617
+        ZIndex: =2
+

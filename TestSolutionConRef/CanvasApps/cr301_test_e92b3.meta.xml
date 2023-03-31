@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>cr301_test_e92b3</Name>
-  <AppVersion>2023-03-31T07:43:01Z</AppVersion>
+  <AppVersion>2023-03-31T07:53:42Z</AppVersion>
   <Status>Ready</Status>
   <CreatedByClientVersion>3.23032.12.0</CreatedByClientVersion>
   <MinClientVersion>3.23032.12.0</MinClientVersion>
@@ -14,7 +14,7 @@
   <CommitMessage xsi:nil="true"></CommitMessage>
   <Publisher xsi:nil="true"></Publisher>
   <AuthorizationReferences>[]</AuthorizationReferences>
-  <ConnectionReferences>{"468f35b7-bab5-43ad-ad2e-473ce43f6725":{"id":"/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas","displayName":"Dynamics 365 Business Central","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1624/1.0.1624.3220/dynamicssmbsaas/icon.png","dataSources":["contacts (v2.0)"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"SANDBOX,a0d54bf1-ffb7-ed11-a389-000d3a269d47":{"dataSources":{"contacts (v2.0)":{"tableName":"contacts,v2.0"}}}},"apiTier":"Premium","actions":["providers/PowerPlatform.Governance/Operations/Read"]}}</ConnectionReferences>
+  <ConnectionReferences>{"468f35b7-bab5-43ad-ad2e-473ce43f6725":{"id":"/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas","displayName":"Dynamics 365 Business Central","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1624/1.0.1624.3220/dynamicssmbsaas/icon.png","dataSources":["contacts (v2.0)"],"dependencies":[],"dependents":["381573e5-3838-4686-bd78-7bb50dd1d912"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"SANDBOX,a0d54bf1-ffb7-ed11-a389-000d3a269d47":{"dataSources":{"contacts (v2.0)":{"tableName":"contacts,v2.0"}}}},"apiTier":"Premium","actions":["providers/PowerPlatform.Governance/Operations/Read"]},"381573e5-3838-4686-bd78-7bb50dd1d912":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png","dataSources":["FlowWithNoRef"],"dependencies":["468f35b7-bab5-43ad-ad2e-473ce43f6725"],"dependents":[],"parameterHints":{"workflowName":{"value":"20505e88-25ca-462e-aa7e-06c784508931"},"workflowEntityId":{"value":"2816f4bc-91cf-ed11-b597-000d3a1b9188"},"468f35b7-bab5-43ad-ad2e-473ce43f6725":{"value":"shared_dynamicssmbsaas"}},"parameterHintsV2":{"workflowName":{"value":"20505e88-25ca-462e-aa7e-06c784508931"},"workflowEntityId":{"value":"2816f4bc-91cf-ed11-b597-000d3a1b9188"},"shared_dynamicssmbsaas":{"value":"468f35b7-bab5-43ad-ad2e-473ce43f6725"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]}}</ConnectionReferences>
   <DatabaseReferences>{}</DatabaseReferences>
   <AppComponents>[]</AppComponents>
   <AppComponentDependencies>[]</AppComponentDependencies>

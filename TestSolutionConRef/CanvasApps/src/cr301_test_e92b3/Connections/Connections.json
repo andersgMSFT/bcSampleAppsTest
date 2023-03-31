@@ -1,4 +1,50 @@
 {
+  "381573e5-3838-4686-bd78-7bb50dd1d912": {
+    "connectionParameters": {
+      "logicAppHostType": "ARM",
+      "workFlowCallbackUri": "https://prod-70.westus.logic.azure.com:443/workflows/cacbe9536d8946d2a093fabde48950bb/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ll4fIi3KbtybqStRUA05j6S0bfcbqO9RTgC9RO1liOA",
+      "workflowEndpoint": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/6e08eabd07584c1fb81502de42e3c2b1-0567b0a62da8457bb9a148bca4b49df5/providers/Microsoft.Logic/workflows/eddfa27a-bde8-4011-91fc-c9f878d8d427",
+      "workflowEntityId": "2816f4bc-91cf-ed11-b597-000d3a1b9188",
+      "workflowName": "eddfa27a-bde8-4011-91fc-c9f878d8d427",
+      "workflowPath": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/6e08eabd07584c1fb81502de42e3c2b1-0567b0a62da8457bb9a148bca4b49df5/providers/Microsoft.Logic/workflows/eddfa27a-bde8-4011-91fc-c9f878d8d427"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "468f35b7-bab5-43ad-ad2e-473ce43f6725": {
+          "value": "shared_dynamicssmbsaas"
+        },
+        "workflowEntityId": {
+          "value": "2816f4bc-91cf-ed11-b597-000d3a1b9188"
+        },
+        "workflowName": {
+          "value": "eddfa27a-bde8-4011-91fc-c9f878d8d427"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_dynamicssmbsaas": {
+          "value": "468f35b7-bab5-43ad-ad2e-473ce43f6725"
+        },
+        "workflowEntityId": {
+          "value": "2816f4bc-91cf-ed11-b597-000d3a1b9188"
+        },
+        "workflowName": {
+          "value": "eddfa27a-bde8-4011-91fc-c9f878d8d427"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "FlowWithNoRef"
+    ],
+    "dependencies": {
+      "shared_dynamicssmbsaas": "468f35b7-bab5-43ad-ad2e-473ce43f6725"
+    },
+    "dependents": [],
+    "id": "381573e5-3838-4686-bd78-7bb50dd1d912"
+  },
   "468f35b7-bab5-43ad-ad2e-473ce43f6725": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -21,7 +67,9 @@
       "contacts (v2.0)"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "381573e5-3838-4686-bd78-7bb50dd1d912"
+    ],
     "id": "468f35b7-bab5-43ad-ad2e-473ce43f6725"
   }
 }
