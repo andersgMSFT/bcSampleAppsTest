@@ -1,0 +1,41 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas",
+    "CdpRevision": {
+      "BaseUrl": "/v3",
+      "LastChangedTimeString": "2023-03-24T16:12:47.5350000Z",
+      "RevisionNumber": 3
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "addressLine1": "Address Line 1",
+      "addressLine2": "Address Line 2",
+      "businessRelation": "Business Relation (businessRelation)",
+      "city": "City",
+      "companyName": "Company Name",
+      "companyNumber": "Company Number",
+      "contactBusinessRelation": "Business Relation (contactBusinessRelation)",
+      "country": "Country/Region Code",
+      "displayName": "Display Name",
+      "email": "Email",
+      "id": "Id",
+      "lastInteractionDate": "Date of Last Interaction",
+      "lastModifiedDateTime": "Last Modified Date",
+      "mobilePhoneNumber": "Mobile Phone No.",
+      "number": "No.",
+      "phoneNumber": "Phone No.",
+      "postalCode": "ZIP Code",
+      "privacyBlocked": "Privacy Blocked",
+      "searchName": "Search Name",
+      "state": "State",
+      "taxRegistrationNumber": "Tax Registration No.",
+      "type": "Type",
+      "website": "Website"
+    },
+    "DatasetName": "SANDBOX,a0d54bf1-ffb7-ed11-a389-000d3a269d47",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "contacts (v2.0)",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

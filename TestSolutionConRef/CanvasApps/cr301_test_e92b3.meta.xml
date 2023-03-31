@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>cr301_test_e92b3</Name>
-  <AppVersion>2023-03-31T07:35:40Z</AppVersion>
+  <AppVersion>2023-03-31T07:43:01Z</AppVersion>
   <Status>Ready</Status>
   <CreatedByClientVersion>3.23032.12.0</CreatedByClientVersion>
   <MinClientVersion>3.23032.12.0</MinClientVersion>
@@ -14,7 +14,7 @@
   <CommitMessage xsi:nil="true"></CommitMessage>
   <Publisher xsi:nil="true"></Publisher>
   <AuthorizationReferences>[]</AuthorizationReferences>
-  <ConnectionReferences>{}</ConnectionReferences>
+  <ConnectionReferences>{"468f35b7-bab5-43ad-ad2e-473ce43f6725":{"id":"/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas","displayName":"Dynamics 365 Business Central","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1624/1.0.1624.3220/dynamicssmbsaas/icon.png","dataSources":["contacts (v2.0)"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"SANDBOX,a0d54bf1-ffb7-ed11-a389-000d3a269d47":{"dataSources":{"contacts (v2.0)":{"tableName":"contacts,v2.0"}}}},"apiTier":"Premium","actions":["providers/PowerPlatform.Governance/Operations/Read"]}}</ConnectionReferences>
   <DatabaseReferences>{}</DatabaseReferences>
   <AppComponents>[]</AppComponents>
   <AppComponentDependencies>[]</AppComponentDependencies>

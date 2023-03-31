@@ -8,15 +8,19 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/31/2023 07:35:39",
+  "HeaderLastSavedDateTimeUTC": "03/31/2023 07:43:00",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "468f35b7-bab5-43ad-ad2e-473ce43f6725": "\"/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas/connections/09aa1cdf557c43b8841176255a744438\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "contacts (v2.0)": 0
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
