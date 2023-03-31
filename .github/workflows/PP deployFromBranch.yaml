@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       solutionName:
-        description: Name of the Power Platform solution
+        description: Name of the Power Platform Solution
         required: true
-        default: BcSampleAppsSolution
+        default: TestSolutionConRef
       environment:
         type: text
         description: The environment to deploy to
